@@ -6,7 +6,7 @@ permalink:           pretty
 # Setup
 title:               박용민
 tagline:             blog
-description:         반갑습니다!
+description:         front-end 공부 흔적을 남기는 blog입니다.
 url:                 https://austinpark420.github.io/
 baseurl:             ''
 paginate:            5
