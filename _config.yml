@@ -1,0 +1,21 @@
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           pretty
+
+# Setup
+title:               박용민
+tagline:             blog
+description:         반갑습니다!
+url:                 https://austinpark420.github.io/
+baseurl:             ''
+paginate:            5
+
+# About/contact
+author:
+  name:              박용민
+  url:
+  email:             austin.park420@gmail.com
+
+# Custom vars
+version:             1.0.0
