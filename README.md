@@ -1,4 +1,4 @@
-박용민 blog
+front end 개발 공부 흔적을 남기는 blog 입니다.
 
 <!-- # Lanyon
 
