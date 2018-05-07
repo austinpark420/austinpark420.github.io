@@ -1,7 +1,7 @@
 ---
 layout: post
 title: jekyll blog 세팅
-permalink: /posts/jekyllblogsetting
+permalink: posts/jekyllblogsetting
 ---
 
 1. github blog repo만들기 [github page](https://pages.github.com/)
