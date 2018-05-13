@@ -1,7 +1,7 @@
 ---
 layout: post
 title: github blog 만들기_jekyll
-permalink: posts/jekyllblogsetting
+permalink: posts/githubblogsetting_jekyll
 tag: jekyll blog github pages
 ---
 
