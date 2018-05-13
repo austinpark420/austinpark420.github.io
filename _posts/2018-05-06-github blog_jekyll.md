@@ -8,8 +8,8 @@ tag: jekyll blog github pages
 - github blog repo clone 하기
 
 ```
-// path: Documents/dev
-// path is located whenever you want
+# path: Documents/dev
+# path is located whenever you want
 
 $ git clone https://github.com/username/username.github.io
 ```
@@ -17,7 +17,7 @@ $ git clone https://github.com/username/username.github.io
 - index.html 파일 만들기
 
 ```
-// path: Documents/dev/username.github.io
+# path: Documents/dev/username.github.io
 
 $ echo "Hello World" > index.html
 ```
@@ -25,7 +25,7 @@ $ echo "Hello World" > index.html
 - github repo에 add, commit, push 하기
 
 ```
-// path: Documents/dev/username.github.io
+# path: Documents/dev/username.github.io
 
 $ git add --all
 $ git commit -m "Initial commit"
@@ -35,7 +35,7 @@ $ git push -u origin master
 - ruby install 여부확인
 
 ```
-// path: Documents/dev/username.github.io
+# path: Documents/dev/username.github.io
 
 $ ruby --version
 ```
@@ -43,7 +43,7 @@ $ ruby --version
 - ruby 설치하기
 
 ```
-// brew 활용하기
+# brew 활용하기
 
 $ brew install ruby
 ```
@@ -51,7 +51,7 @@ $ brew install ruby
 - Gemfile 생성
 
 ```
-// path: Documents/dev/username.github.io
+# path: Documents/dev/username.github.io
 
 $ touch Gemfile
 ```
@@ -59,13 +59,13 @@ $ touch Gemfile
 - bundle install
 
 ```
-// path: Documents/dev/username.github.io
+# path: Documents/dev/username.github.io
 
 $ bundle install
-// Fetching gem metadata from https://rubygems.org/............
-// Fetching version metadata from https://rubygems.org/...
-// Fetching dependency metadata from https://rubygems.org/..
-// Resolving dependencies...
+# Fetching gem metadata from https://rubygems.org/............
+# Fetching version metadata from https://rubygems.org/...
+# Fetching dependency metadata from https://rubygems.org/..
+# Resolving dependencies...
 ```
 
 - 테마적용하기
