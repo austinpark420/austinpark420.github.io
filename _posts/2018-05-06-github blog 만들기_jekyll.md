@@ -14,13 +14,17 @@ tag: jekyll blog github pages
 
 $ git clone https://github.com/username/username.github.io
 ```
+
 3. index.html 파일 만들기
+
 ```
 // path: Documents/dev/username.github.io
 
 $ echo "Hello World" > index.html
 ```
+
 4. github repo에 add, commit, push 하기
+
 ```
 // path: Documents/dev/username.github.io
 
@@ -28,7 +32,9 @@ $ git add --all
 $ git commit -m "Initial commit"
 $ git push -u origin master
 ```
+
 5. ruby install 여부확인
+
 ```
 // path: Documents/dev/username.github.io
 
@@ -36,6 +42,7 @@ $ ruby --version
 ```
 
 6. ruby 설치하기
+
 ```
 // brew 활용하기
 
@@ -43,6 +50,7 @@ $ brew install ruby
 ```
 
 7. .Gemfile 생성
+
 ```
 // path: Documents/dev/username.github.io
 
@@ -50,6 +58,7 @@ $ touch Gemfile
 ```
 
 8. bundle install
+
 ```
 // path: Documents/dev/username.github.io
 
@@ -59,9 +68,9 @@ $ bundle install
 // Fetching dependency metadata from https://rubygems.org/..
 // Resolving dependencies...
 ```
+
 9. 테마적용하기
 [jekyll theme](http://jekyllthemes.org/)
-
 
 ### 참고
 
