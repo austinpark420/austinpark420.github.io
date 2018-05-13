@@ -49,7 +49,7 @@ $ ruby --version
 $ brew install ruby
 ```
 
-7. .Gemfile 생성
+7. Gemfile 생성
 
 ```
 // path: Documents/dev/username.github.io
