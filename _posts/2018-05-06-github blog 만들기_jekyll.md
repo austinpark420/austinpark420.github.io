@@ -4,8 +4,8 @@ title: github blog 만들기_jekyll
 permalink: posts/githubblogsetting_jekyll
 tag: jekyll blog github pages
 ---
-- github blog repo만들기
-- github blog repo clone 하기
+- 1. github blog repo만들기
+- 2. github blog repo clone 하기
 
 ```
 // path: Documents/dev
@@ -14,7 +14,7 @@ tag: jekyll blog github pages
 $ git clone https://github.com/username/username.github.io
 ```
 
-- index.html 파일 만들기
+- 3. index.html 파일 만들기
 
 ```
 // path: Documents/dev/username.github.io
@@ -22,7 +22,7 @@ $ git clone https://github.com/username/username.github.io
 $ echo "Hello World" > index.html
 ```
 
-- github repo에 add, commit, push 하기
+- 4. github repo에 add, commit, push 하기
 
 ```
 // path: Documents/dev/username.github.io
@@ -32,7 +32,7 @@ $ git commit -m "Initial commit"
 $ git push -u origin master
 ```
 
-- ruby install 여부확인
+- 5. ruby install 여부확인
 
 ```
 // path: Documents/dev/username.github.io
@@ -40,7 +40,7 @@ $ git push -u origin master
 $ ruby --version
 ```
 
-- ruby 설치하기
+- 6. ruby 설치하기
 
 ```
 // brew 활용하기
@@ -48,7 +48,7 @@ $ ruby --version
 $ brew install ruby
 ```
 
-- Gemfile 생성
+- 7. Gemfile 생성
 
 ```
 // path: Documents/dev/username.github.io
@@ -56,7 +56,7 @@ $ brew install ruby
 $ touch Gemfile
 ```
 
-- bundle install
+- 8. bundle install
 
 ```
 // path: Documents/dev/username.github.io
@@ -68,7 +68,7 @@ $ bundle install
 // Resolving dependencies...
 ```
 
-- 테마적용하기
+- 9. 테마적용하기
 
 [jekyll theme](http://jekyllthemes.org/)
 
