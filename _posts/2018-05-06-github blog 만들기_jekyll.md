@@ -4,10 +4,7 @@ title: github blog 만들기_jekyll
 permalink: posts/githubblogsetting_jekyll
 tag: jekyll blog github pages
 ---
-
-
 1. github blog repo만들기
-
 
 2. github blog repo clone
 ```
@@ -65,9 +62,9 @@ $ bundle install
 [jekyll theme](http://jekyllthemes.org/)
 
 
-참고
+### 참고
 
-* github blog repo만들기 [github page](https://pages.github.com/)
-* jekylle 설치 [github help](https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/)
-* theme 적용 [jekyll theme](http://jekyllthemes.org/)
-* url path 설정 [permalink](https://jekyllrb.com/docs/permalinks/#permalink-style-examples)
+  * github blog repo만들기 [github page](https://pages.github.com/)
+  * jekylle 설치 [github help](https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/)
+  * theme 적용 [jekyll theme](http://jekyllthemes.org/)
+  * url path 설정 [permalink](https://jekyllrb.com/docs/permalinks/#permalink-style-examples)
