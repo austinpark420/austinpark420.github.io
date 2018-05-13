@@ -26,7 +26,7 @@ tag: frontend dev
 
      code를 call하는 주체에 따라 Framwork와 library로 구분된다고 하네요.
 
-   ![frameworkVSlibrary](/Users/parkyongmin/Documents/dev/austinpark420.github.io/_img/frameworkVSlibrary.png)
+   ![frameworkVSlibrary](../_img/frameworkVSlibrary.png)
 
 2. 개발용어 번역하기
 
@@ -38,7 +38,7 @@ tag: frontend dev
 
      정확히는 모르겠지만 query는 무언가 궁금한 것 혹은 의문이 있는 것을 요청한다고 볼 수 있겠네요. 
 
-     ![query](/Users/parkyongmin/Documents/dev/austinpark420.github.io/_img/query.png)
+     ![query](../_img/query.png)
 
 3. Google 검색
 
