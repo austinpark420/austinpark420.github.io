@@ -6,7 +6,8 @@ tag: jekyll blog github pages
 ---
 1. github blog repo만들기
 
-2. github blog repo clone
+2. github blog repo clone 하기
+
 ```
 // path: Documents/dev
 // path is located whenever you want
