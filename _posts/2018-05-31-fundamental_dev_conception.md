@@ -51,4 +51,4 @@ tag: frontend dev javascript fundemental
   * 변수 hoisting: 선언, 초기화, 할당 중 선언, 초기화 까지만 이뤄지는 것.
   * 함수 hoisting: 선언, 초기화, 할당 모두 이루어져 함수 선언 이전에 호출할 수 있는 것.
     * 함수선언식의 경우, 함수 hoisting이 일어난다.
-    * 함수표현식의 경우, 함수를 값으로 변수에 저장하는 방식이기 때문에 변수 hoisiting이 일어난다.
+    * 함수표현식의 경우, 함수를 값으로 변수에 저장하는 방식이기 때문에 변수 hoisting이 일어난다.
