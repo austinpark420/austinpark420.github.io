@@ -36,3 +36,19 @@ tag: frontend dev javascript fundemental
 
 - Code block (Block statement)
   * 명령어를 중괄호로 묶어놓은 것.
+
+- Pass-by-value VS Pass-by-reference
+  * Pass-by-value: immutable, 메모리에 저장된 값 자체를 참조하는 것.
+  * Pass-by-reference: mutable, 메모리에 주소 값을 참조하는 것.
+
+- Object의 property VS method
+  * property: 데이터를 값으로 가지는 object key(혹은 name)
+  * method: 함수를 값으로 가지는 object key(혹은 name)
+
+- Hoisting
+  * 선언문이 코드 최상위로 올라간 것처럼 작동하는 것.
+  * javascript 엔진은 runtime 이전에 코드를 훑으면서 선언문에 대한 정보를 먼저 저장한다.
+  * 변수 hoisting: 선언, 초기화, 할당 중 선언, 초기화 까지만 이뤄지는 것.
+  * 함수 hoisting: 선언, 초기화, 할당 모두 이루어져 함수 선언 이전에 호출할 수 있는 것.
+    * 함수선언식의 경우, 함수 hoisting이 일어난다.
+    * 함수표현식의 경우, 함수를 값으로 변수에 저장하는 방식이기 때문에 변수 hoisiting이 일어난다.
