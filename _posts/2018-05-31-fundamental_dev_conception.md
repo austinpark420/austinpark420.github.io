@@ -45,10 +45,25 @@ tag: frontend dev javascript fundemental
   * property: 데이터를 값으로 가지는 object key(혹은 name)
   * method: 함수를 값으로 가지는 object key(혹은 name)
 
-- Hoisting
+- Hoisting (javascript)
   * 선언문이 코드 최상위로 올라간 것처럼 작동하는 것.
   * javascript 엔진은 runtime 이전에 코드를 훑으면서 선언문에 대한 정보를 먼저 저장한다.
   * 변수 hoisting: 선언, 초기화, 할당 중 선언, 초기화 까지만 이뤄지는 것.
   * 함수 hoisting: 선언, 초기화, 할당 모두 이루어져 함수 선언 이전에 호출할 수 있는 것.
     * 함수선언식의 경우, 함수 hoisting이 일어난다.
     * 함수표현식의 경우, 함수를 값으로 변수에 저장하는 방식이기 때문에 변수 hoisting이 일어난다.
+
+- First-class-object
+  * 하기의 조건을 충족할 때 일급객체라고 한다.
+    * 무명 리터럴로 표현이 가능하다.
+    * 변수나 자료구조에 저장이 가능하다.
+    * 함수의 매개변수로 전달할 수 있다.
+    * return 값으로 반환할 수 있다.
+
+- 동기식(synchronous) VS 비동기(asynchronous)
+  * 동기식: 실행되고 있는 task가 끝나야 다른 task를 실행할 수 있는 것.
+  * 비동기식: task가 실행되고 있어도 다른 task를 실행할 수 있는 것.
+
+- callback function
+  * 함수의 매개변수에 있는 함수를 콜백함수라고 한다.
+  * 주로 비동기로 동작해야할 기능이 있을 때 사용한다.
