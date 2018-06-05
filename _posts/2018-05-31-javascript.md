@@ -8,9 +8,6 @@ tag: frontend dev javascript fundemental
 # javascript
 * 절차형, 명령형, 함수형, 객체지향형 javascript가 있다.
 
-### DOM
-* HTML이 메모리에
-
 ### 함수선언식(Function declaration) VS 함수표현식(Function expression)
 
 #### 함수선언식(Function declaration)
@@ -50,16 +47,19 @@ var square = function(number) {
 * 객체의 내부까지 들여다 볼 수 있는 함수.
 
 ### function object property
+
 ```javascript
 function fnc(parameter) {
   return paremeter;
 }
 console.dir(fnc);
 ```
+
 ![functionProperty](../public/img/functionProperty.png)
 * arguments property
-  * 유사배열 객체
-  * 함수 바디에서 지역변수처럼 사용 가능
+  * 가변인자함수 일때, argument로 전달받는 갯수를 유사배열 객체로 저장하는 property.
+  * 함수 바디에서 지역변수처럼 사용 가능.
+
 ```javascript
 // arguments 사용법
 
@@ -74,19 +74,19 @@ fnc(1, 2, 3); // { '0': 1, '1': 2, '2': 3 }
 ```
 
 * caller
-  * 함수를 부른 주체
+  * 함수를 부른 주체.
   * ex. 콜백함수를 가지는 함수.
 
 * length
-  * parameter의 갯수
+  * parameter의 갯수.
 
 * name
-  * 함수의 이름
+  * 함수의 이름.
 
 * __prototype__
-  * ECMAScript 스펙에서는 [[prototype]]으로 명시되어 있지만 크롬에서는 __prototype__으로 지정함
-  * 부모역할을 하는 prototype 객체와 연결해주는 property
+  * ECMAScript 스펙에서는 [[prototype]]으로 명시되어 있지만 크롬에서는 __prototype__으로 지정함.
+  * 부모역할을 하는 prototype 객체와 연결해주는 property.
 
 * prototype
   * 생성자함수 혹은 함수만 가진다.
-  * 함수 객체의 Prototype와 연결해주는 property
+  * 함수 객체의 Prototype와 연결해주는 property.
