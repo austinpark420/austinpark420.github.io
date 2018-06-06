@@ -89,4 +89,4 @@ fnc(1, 2, 3); // { '0': 1, '1': 2, '2': 3 }
 
 * prototype
   * 생성자함수 혹은 함수만 가진다.
-  * 함수 객체의 Prototype와 연결해주는 property.
+  * 함수 객체의 Prototype과 연결해주는 property.
