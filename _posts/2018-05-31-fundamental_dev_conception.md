@@ -67,3 +67,26 @@ tag: frontend dev javascript fundemental
 - callback function
   * 함수의 매개변수에 있는 함수를 콜백함수라고 한다.
   * 주로 비동기로 동작해야할 기능이 있을 때 사용한다.
+
+- Call-by-value VS Call-by-reference
+  * Call-by-value: parameter로 전달되는 argument가 기본자료형일 때, pass-by-value와 같이 동작하는 것.
+  * Call-by-reference: parameter로 전달되는 argument가 객체형일 때, pass-by-reference와 같이 동작하는 것.
+
+- prototype 객체
+  * 모든 객체의 부모역할을 하는 객체로써, javascritp에서 상속을 가능하게해주는 개념이다.
+
+- Navtive object VS Host object
+  * Navtive object
+    * ECMAScript의 스펙에서 제공하는 object.
+    * javascript의 runtime 환경과 상관없이 사용할 수 있는 객체.
+  * Host object
+    * brower 혹은 node.js와 같이 javascript의 runtime 환경에서 제공하는 객체.
+
+- Static Method VS Prototype Method
+  * Static Method: 생성자함수가 가지는 method.
+  * Prototype Method: Prototype이 가지는 method, 인스턴스가 상속받아서 사용할 수 있는 Method.
+
+- 가변인자함수
+  * parameter의 갯수가 정해지지 않고 여러개의 argument를 parameter으로 전달받을 수 있는 함수.
+
+- 가변인자함수
