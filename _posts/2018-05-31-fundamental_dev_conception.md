@@ -88,5 +88,3 @@ tag: frontend dev javascript fundemental
 
 - 가변인자함수
   * parameter의 갯수가 정해지지 않고 여러개의 argument를 parameter으로 전달받을 수 있는 함수.
-
-- 가변인자함수
