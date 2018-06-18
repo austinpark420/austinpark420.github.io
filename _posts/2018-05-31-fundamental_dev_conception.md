@@ -88,3 +88,14 @@ tag: frontend dev javascript fundemental
 
 - 가변인자함수
   * parameter의 갯수가 정해지지 않고 여러개의 argument를 parameter으로 전달받을 수 있는 함수.
+
+- lexical scope
+  * 함수가 선언된 시점의 scope를 가지는 것.
+
+- Execution Context
+  * 실행가능한 코드가 실행되기 위해 필요한 환경
+
+- closer
+  1. 외부함수, 내부함수가 있어야 함.
+  2. 내부함수에서 외부함수의 변수를 참조해야 함.
+  3. 내부함수가 외부함수보다 오래 살아있어야 함.
