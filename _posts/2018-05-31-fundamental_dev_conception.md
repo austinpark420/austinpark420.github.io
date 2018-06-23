@@ -105,3 +105,15 @@ tag: frontend dev javascript fundemental
 
 - DOM
   * 브라우저가 HTML을 파싱해서 해석할 수 있게 컴파일한 것.
+
+- backend as a service[BaaS]
+  * 클라우드 컴퓨팅 서비스 모델.
+  * 웹 어플리케이션 혹은 앱을 백엔드 클라우드 서버에 연결해주는 기능을 하고, SDK와 API를 활용해 푸시 알람 혹은 소셜 네트워크 서비스 등을 제공한다.
+
+- query string vs payload
+  * query string: 데이터를 url창으로 보내는 것. GET 방식
+  * payload: request body에 담긴 데이터. POST 방식
+
+- 함수형 프로그래밍 vs 명령형 프로그래밍
+  * 함수형 프로그래밍: 입력값으로부터 목적값을 생성하는 것.
+  * 명령형 프로그래밍: 데이터의 상태를 순차적으로 변형시키는 것.
