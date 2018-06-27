@@ -97,10 +97,10 @@ tag: frontend dev javascript fundemental
   * 실행가능한 코드가 실행되기 위해 필요한 환경
 
 - closer
-  * 조건
+  * ES5 조건
     1. 외부함수, 내부함수가 있어야 함.
     2. 내부함수에서 외부함수의 변수를 참조해야 함.
-    3. 내부함수가 외부함수보다 오래 살아있어야 함.
+    3. 내부함수가 외부함수보다 라이프사이클이 길어야 한다.
   * 내부함수가 외부함수를 변수를 참조하고 있을 때, 외부함수의 라이프사이클이 종료되어서 외부함수 변수 값을 참조 할 수 있는 현상.
 
 - DOM
@@ -124,3 +124,9 @@ tag: frontend dev javascript fundemental
 - REST API
   * HTTP 통신프로토콜을 효율적으로 활용하는 이론을 말한다.
   * uri에는 정보의 자원(명사)을 표현하고, HTTP Method로 자원에 대한 행위(동사)로 표현한다.
+
+- Var vs Let vs Const
+  * Var: Var 키워드로 선언한 변수는 function scope를 가진다.
+  * Let: Let 키워드로 선언한 변수는 codeblock scope를 가진다. (재할당 가능)
+  * Const: Const 키워드로 선언한 변수는 codeblock scope를 가진다. (재할당 불가능)
+  * Let 과 Const도 Var와 마찬가지로 호이스팅이 발생하지만 Var와 다르게 일시적 사각지대가 있어 선언 전에 변수 참조가 안된다.
