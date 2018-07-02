@@ -130,3 +130,18 @@ tag: frontend dev javascript fundemental
   * Let: Let 키워드로 선언한 변수는 codeblock scope를 가진다. (재할당 가능)
   * Const: Const 키워드로 선언한 변수는 codeblock scope를 가진다. (재할당 불가능)
   * Let 과 Const도 Var와 마찬가지로 호이스팅이 발생하지만 Var와 다르게 일시적 사각지대가 있어 선언 전에 변수 참조가 안된다.
+
+- Class
+  * ES6에 도입된 키워드로 prototype 기반 언어를 Class기반 언어처럼 사용할 수 있게 해주는 문법적 설탕.
+
+- promise
+  * 비동기식으로 서버와 통신하는 방법 중 하나로 Ajax의 콜백헬과 에러처리 문제를 보안한 방법이다.
+
+- Module
+  * 재사용이 가능한 코드모음
+
+- webpack
+  * Module bundler
+
+- babel
+  * Transfiler
