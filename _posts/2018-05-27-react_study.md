@@ -5,7 +5,6 @@ permalink: posts/react_study
 tag: frontend react
 ---
 
-## React
 
 ### Framework VS Library
 * Framework: 틀이 정해져 있음. 그 틀 안에서 필요한 부품을 사용하는 것. 그렇기 때문에 다른 라이브러리나 Framework와 함께 쓰려고 할 때 충돌이 생길 수 있음.
@@ -73,6 +72,16 @@ App.propTypes = {
 
 <iframe height='265' scrolling='no' title='how to ' src='//codepen.io/austinpark420/embed/YLmOZz/?height=265&theme-id=0&default-tab=js,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/austinpark420/pen/YLmOZz/'>how to </a> by YongMin Park (<a href='https://codepen.io/austinpark420'>@austinpark420</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
+
+
+## redux
+
+#### Provider
+* 하나의 컴포넌트
+
+#### connect([...options])
+* 컴포넌트를 redux에 연결하는 함수를 반환한다.
+
 
 
 

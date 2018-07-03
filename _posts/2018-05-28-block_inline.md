@@ -5,8 +5,6 @@ permalink: posts/blockandinline
 tag: frontend html css inline block
 ---
 
-## block과 inline
-
 ### block
 * margin collapse 현상
   * box 안의 block1에게 margin-top을 주게되면 부모로부터 margin-top이 적용되는 것이 아니라, 부모도 같이 margin-top 적용되는 것을 확인할 수 있다. 이는 margin collapse 현상이고, 이를 해결하기위해서 border 값을 적용하면 된다.
