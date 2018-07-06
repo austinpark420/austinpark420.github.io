@@ -211,9 +211,16 @@ fnc(1, 2, 3); // { '0': 1, '1': 2, '2': 3 }
 
 - Module
   * 재사용이 가능한 코드모음
+  * 현재, 많은 브라우져 벤더들이 module을 지원하지 않는다.
 
 - webpack
   * Module bundler
 
 - babel
   * Transfiler
+
+- Node
+  * javascript가 서버에서 동작하는 환경
+
+- npm
+  * node package manager의 약자로 재 사용 가능한 코드(package)로 이뤄진 저장소이며, package를 설치하고 관리할 수 있는 CLI를 제공한다.
