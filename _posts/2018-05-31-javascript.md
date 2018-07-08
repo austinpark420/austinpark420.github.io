@@ -220,7 +220,7 @@ fnc(1, 2, 3); // { '0': 1, '1': 2, '2': 3 }
   * Transfiler
 
 - Node
-  * javascript가 서버에서 동작하는 환경
+  * javascript가 서버사이드에서 동작하는 환경.
 
 - npm
   * node package manager의 약자로 재 사용 가능한 코드(package)로 이뤄진 저장소이며, package를 설치하고 관리할 수 있는 CLI를 제공한다.
