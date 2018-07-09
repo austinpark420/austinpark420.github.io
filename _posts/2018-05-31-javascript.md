@@ -224,3 +224,17 @@ fnc(1, 2, 3); // { '0': 1, '1': 2, '2': 3 }
 
 - npm
   * node package manager의 약자로 재 사용 가능한 코드(package)로 이뤄진 저장소이며, package를 설치하고 관리할 수 있는 CLI를 제공한다.
+
+- typescript
+  * AltJS으로 javascript의 슈퍼셋이다.
+  * javascript는 동적 타이핑 언어이다. 때문에 여러 side effect가 발생하는데 typescript는 변수의 type을 지정해 많은 side effect를 줄였다.
+
+- typescirpt의 추상 class
+  * 하나 이상의 추상 method를 포함하며 일반 method도 포함할 수 있는 class이다.(추상 method는 이름과 타입만 지정되어 있고 내용은 없다.)
+  * 추상 class를 상속받는 class는 추상 class가 가지고 있는 추상 method를 무조건 구현해야한다.
+
+- typescipt의 interface
+  * 타입체크를 위해 사용하며 class의 일관성을 위해 사용한다.
+
+- typescript의 generic
+  * 클래스 선언 시점에 매개변수와 반환 값에 타입을 지정할 수 없을 때 generic을 활용해서 선언시점이 아니라 셍성시 type을 지정하는 것이다.
