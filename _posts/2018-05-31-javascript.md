@@ -256,3 +256,9 @@ fnc(1, 2, 3); // { '0': 1, '1': 2, '2': 3 }
     * TCP(Transfer Control Protocol): 신뢰성있는 바이트 스트림 서비스
     * DNS(Domain Name System): 도메인 이름과 IP주소를 확인하고 제공하는 역할을 한다.
 
+- cache vs cookie
+  * cache
+    * 프록시서버 혹은 브라우저가 가지고 있는 서버의 레스폰스 결과물의 사본을 뜻한다. cache를 가지고 있기 때문에 중복되는 서버의 access를 줄 일 수 있다.
+  * cookie
+    * 서버와 클라이언트는 stateless이다. 이 말의 뜻은 클라이언트는 어떤 request 날렸는지, 서버는 어떤 response를 했는지 기억하지 않는다는 뜻이다. 그러나 로그인과 같이 클라이언트와 서버사이에 기억해야할 정보가 있을 수 있다. 이런 상황에서 서버에서 cookie를 발급해 stateless 상황에서 기억해야할 정보를 기억할 수 있다.
+
