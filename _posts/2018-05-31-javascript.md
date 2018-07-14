@@ -147,7 +147,7 @@ fnc(1, 2, 3); // { '0': 1, '1': 2, '2': 3 }
   * name
     * 함수의 이름.
 
-  * __prototype__
+  * \__prototype__
     * ECMAScript 스펙에서는 [[prototype]]으로 명시되어 있지만 크롬에서는 __prototype__으로 지정함.
     * 부모역할을 하는 prototype 객체와 연결해주는 property.
 
@@ -217,7 +217,7 @@ fnc(1, 2, 3); // { '0': 1, '1': 2, '2': 3 }
   * Module bundler
 
 - babel
-  * Transfiler
+  * Transfilter
 
 - Node
   * javascript가 서버사이드에서 동작하는 환경.
@@ -268,7 +268,7 @@ fnc(1, 2, 3); // { '0': 1, '1': 2, '2': 3 }
   * 하나의 html으로 구성되어 있기 때문에 MPA보다 상대적으로 초기 구동시간이 오래걸린다.
 
 - 웹 컴포넌트
- * html, css, javascript를 하나로 묶어 독립적인 view를 만드는 것.
+  * html, css, javascript를 하나로 묶어 독립적인 view를 만드는 것.
 
 
 
