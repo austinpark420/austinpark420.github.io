@@ -286,7 +286,7 @@ tbody tr:nth-child(odd) th {
  */
 
 .container {
-  max-width: 46rem;
+  max-width: 56rem;
   padding-left:  1rem;
   padding-right: 1rem;
   margin-left:  auto;
