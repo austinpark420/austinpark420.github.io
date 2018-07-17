@@ -21,10 +21,12 @@ tag: frontend dev javascript react angular
       * 상태를 전달받는 자식 component class에서 `@input()`으로 받는다.
     * 자식이 부모에게 상태를 전달할 때 event binding을 사용한다.
 
-
 4. filter 사용법
   * react: render 함수 내부에 filter 메소드를 사용한다.
   * angular: pipe를 사용한다.
 
+5. class attribute 동적 할당
+  * react: className과 javascript으로 인터렉션을 한다.
+  * angular: class(단항 vs 다항), ngClass 디렉티브로 조작한다.
 
 
