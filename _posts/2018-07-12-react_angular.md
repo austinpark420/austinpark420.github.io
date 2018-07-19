@@ -29,4 +29,6 @@ tag: frontend dev javascript react angular
   * react: className과 javascript으로 인터렉션을 한다.
   * angular: class(단항 vs 다항), ngClass 디렉티브로 조작한다.
 
-
+6. 상태 통합관리
+  * react: 보통 Redux, React-Redux 라이브러리를 사용한다.
+  * angular: service를 사용한다.
