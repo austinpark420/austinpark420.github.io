@@ -17,3 +17,7 @@ author:
 
 # Custom vars
 version:             1.0.0
+
+# Archive
+plugins:
+  - jekyll-archives
