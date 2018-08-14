@@ -5,10 +5,7 @@ permalink: posts/react_study
 tag: frontend react
 ---
 
-
-### Framework VS Library
-* Framework: 틀이 정해져 있음. 그 틀 안에서 필요한 부품을 사용하는 것. 그렇기 때문에 다른 라이브러리나 Framework와 함께 쓰려고 할 때 충돌이 생길 수 있음.
-* Library: 정해진 틀 없이 필요한 것을 사용하는 것.
+## React
 
 ### 서버사이드 렌더링 지원
 * 초기 구동 딜레이 문제점 해결.
@@ -75,12 +72,22 @@ App.propTypes = {
 
 
 ## redux
+    * 상태관리를 통합적으로 해주는 library.
 
-#### Provider
-* 하나의 컴포넌트
+### Provider
+    * 하위 컴포넌트에 redux의 store에 연결해주는 역핡.
 
-#### connect([...options])
-* 컴포넌트를 redux에 연결하는 함수를 반환한다.
+### connect([...options])
+    * 컴포넌트를 redux에 연결하는 함수를 반환한다.
+
+## immutable.js
+    * JavaScript에서 배열과 객체는 pass by reference이다.
+    * 직접적으로 수정한다면, 내부의 값이 수정됐을지라도 레퍼런스가 가르키는곳은 같기 때문에 똑같은 값으로 인식한다.
+    * React에서 이를 상태변화로 간주할 수가 없다.
+    * 그래서 새 배열이나 객체에 복사를 하는데 이를 편하게 할 수 있게 도와주는 것이 immutable.js이다.
+
+
+
 
 
 
