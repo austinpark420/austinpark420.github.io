@@ -35,7 +35,7 @@ tag: frontend Angular
 ### 라우트 순서
   1. URL path 와 component가 쌍으로 이루어진 라우트 생성.
   2. RouterModule.forRoot 또는 RouterModule.forChild를 호출하여 라우트 구성이 포함된 모듈을 생성.
-  3. <router-oulet>으로 뷰가 렌더링될 위치 지정.
+  3. router-oulet으로 뷰가 렌더링될 위치 지정.
   4. routerLink 프로퍼티로 네이게이션 작성.
 
 ### 생명주기
