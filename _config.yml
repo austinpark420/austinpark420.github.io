@@ -21,3 +21,4 @@ version: 1.0.0
 # Archive
 plugins:
   - jekyll-archives
+# bundle exec jekyll serve
