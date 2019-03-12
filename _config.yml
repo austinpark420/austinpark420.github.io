@@ -2,21 +2,21 @@
 # Use of `relative_permalinks` ensures post links from the index work properly.
 
 # Setup
-title:               FrontEnd
-tagline:             Blog
-description:         Front End Dev
-url:                 https://austinpark420.github.io
-baseurl:             ''
-paginate:            10
+title: yngmanie
+tagline: 블로그
+description: Front End Dev
+url: https://austinpark420.github.io
+baseurl: ""
+paginate: 10
 
 # About/contact
 author:
-  name:              박용민
+  name: 박용민
   url:
-  email:             austin.park420@gmail.com
+  email: austin.park420@gmail.com
 
 # Custom vars
-version:             1.0.0
+version: 1.0.0
 
 # Archive
 plugins:
