@@ -5,7 +5,7 @@ permalink: posts/javascript_module_systems
 tag: javascript
 ---
 
-> 해당 포스트는 [JavaScript Module Systems Showdown: CommonJS vs AMD vs ES2015](https://auth0.com/blog/javascript-module-systems-showdown/)을 번역한 글입니다. 오역한 부분이 있으면 댓글 부탁드립니다.
+> 해당 포스트는 [JavaScript Module Systems Showdown: CommonJS vs AMD vs ES2015](https://auth0.com/blog/javascript-module-systems-showdown/)을 번역한 컨텐츠입니다. 오역한 부분이 있으면 댓글 부탁드립니다.
 
 - 자바스크립트 개발이 점점 보편화되고 의존성 등을 다루기가 어려워지고 있습니다. 이러한 문제를 해야하기 위해 모듈시스템이 개발되었습니다. 이 글에서는 우리는 현재 개발자들이 문제를 해결하기위해 사용하는 여러 솔류션과 그 문제를 살펴보려고 합니다.
 
