@@ -67,7 +67,7 @@ forEach() 와 Map()을 테스트한 결과가 아래 이미지 입니다.
 
 보시다시피, 필자 컴퓨터에서 forEach()가 map()보다 70%가 속도가 느립니다. 여러분의 브라우저에서 약간 다를수도 있습니다.
 
-[Map vs ForEach | jsPerf](https://jsperf.com/map-vs-foreach-speed-test)
+[Map vs ForEach jsPerf](https://jsperf.com/map-vs-foreach-speed-test)
 
 ## 기능 측정
 
