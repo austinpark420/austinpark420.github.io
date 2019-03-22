@@ -32,6 +32,9 @@
  * Update the foundational and global aspects of the page.
  */
 
+/* 웹폰트 */
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
 /* Prevent scroll on narrow devices */
 html,
 body {
@@ -39,7 +42,7 @@ body {
 }
 
 html {
-  font-family: "PT Serif", Georgia, "Times New Roman", serif;
+  font-family: "Nanum Gothic", "PT Serif", Georgia, "Times New Roman", serif;
 }
 
 h1,
@@ -111,7 +114,7 @@ h6 {
 .masthead-title small {
   /* font-size: 75%; */
   font-weight: 400;
-  color: #c0c0c0;
+  color: #181818;
   letter-spacing: 0;
 }
 
@@ -405,6 +408,7 @@ a.sidebar-nav-item:focus {
 .page,
 .post {
   margin-bottom: 2em;
+  border-bottom: 1px solid #eee;
 }
 
 /* Blog post or page title */
@@ -422,7 +426,7 @@ a.sidebar-nav-item:focus {
 .post-date {
   display: block;
   margin-top: -0.5rem;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
   color: #9a9a9a;
 }
 
@@ -431,7 +435,7 @@ a.sidebar-nav-item:focus {
   margin-left: 0.5rem;
   margin-top: 0.5rem;
   margin-bottom: 1rem;
-  color: #9a9a9a;
+  color: #181818;
 }
 
 /* Related posts */
