@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ES6에서 class를 어떻게 사용할까요?
-permalink: posts/
+permalink: posts/class
 tag: javascript
 ---
 
