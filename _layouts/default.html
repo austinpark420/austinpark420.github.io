@@ -46,8 +46,17 @@
       </div>
     </div>
 
-    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
-
+    <!-- <label for="sidebar-checkbox" class="sidebar-toggle"></label> -->
+    <label for="sidebar-checkbox" class="ham_container sidebar-toggle">
+      <div class="ham_wrap">
+        <p class="ham_bar_area">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </p>
+      </div>
+    </label>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script>
       (function(document) {
         var toggle = document.querySelector(".sidebar-toggle");
@@ -58,19 +67,48 @@
           "click",
           function(e) {
             var target = e.target;
-
             if (
               !checkbox.checked ||
               sidebar.contains(target) ||
               (target === checkbox || target === toggle)
             )
-              return;
+              console.log();
+            return;
 
             checkbox.checked = false;
           },
           false
         );
       })(document);
+
+      $(".ham_container")
+        .hover()
+        .click(function() {
+          $(".ham_wrap")
+            .find(".bar")
+            .toggleClass("ham_container_toggle");
+        });
+      $(".ham_wrap")
+        .hover()
+        .click(function() {
+          $(".ham_wrap")
+            .find(".bar:nth-child(1)")
+            .toggleClass("ham_first_bar_toggle");
+        });
+      $(".ham_wrap")
+        .hover()
+        .click(function() {
+          $(".ham_wrap")
+            .find(".bar:nth-child(2)")
+            .toggleClass("ham_two_bar_toggle");
+        });
+      $(".ham_wrap")
+        .hover()
+        .click(function() {
+          $(".ham_wrap")
+            .find(".bar:nth-child(3)")
+            .toggleClass("ham_three_bar_toggle");
+        });
     </script>
   </body>
 </html>
