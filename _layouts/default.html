@@ -81,25 +81,34 @@
         );
       })(document);
 
-      $(".ham_container").click(function() {
-        $(".ham_wrap")
-          .find("bar")
-          .css("width", "120%");
-      });
-
-      /* .ham_wrap:hover .bar {
-    width: 120%;
-  }
-  .ham_wrap:hover .bar:nth-child(1) {
-    transform: rotate(45deg) translate(3px, 4px);
-  }
-  .ham_wrap:hover .bar:nth-child(2) {
-    transform: translateX(20px);
-    opacity: 0;
-  }
-  .ham_wrap:hover .bar:nth-child(3) {
-    transform: rotate(-45deg) translate(3px, -4px);
-  } */
+      $(".ham_container")
+        .hover()
+        .click(function() {
+          $(".ham_wrap")
+            .find(".bar")
+            .toggleClass("ham_container_toggle");
+        });
+      $(".ham_wrap")
+        .hover()
+        .click(function() {
+          $(".ham_wrap")
+            .find(".bar:nth-child(1)")
+            .toggleClass("ham_first_bar_toggle");
+        });
+      $(".ham_wrap")
+        .hover()
+        .click(function() {
+          $(".ham_wrap")
+            .find(".bar:nth-child(2)")
+            .toggleClass("ham_two_bar_toggle");
+        });
+      $(".ham_wrap")
+        .hover()
+        .click(function() {
+          $(".ham_wrap")
+            .find(".bar:nth-child(3)")
+            .toggleClass("ham_three_bar_toggle");
+        });
     </script>
   </body>
 </html>

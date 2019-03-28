@@ -290,7 +290,6 @@ a.sidebar-nav-item:focus {
 #sidebar-checkbox:focus ~ .sidebar-toggle,
 #sidebar-checkbox:checked ~ .sidebar-toggle {
   color: #fff;
-  background-color: #555;
 }
 
 .sidebar-toggle:active:before,
@@ -685,7 +684,6 @@ a.pagination-item:hover {
   width: 30px;
   height: 30px;
   margin: 0 auto;
-  background-color: pink;
   cursor: pointer;
 }
 
@@ -718,7 +716,7 @@ a.pagination-item:hover {
   animation-delay: 0.2s;
 }
 
-@keyframes bar {
+/* @keyframes bar {
   0% {
     width: 100%;
   }
@@ -728,19 +726,19 @@ a.pagination-item:hover {
   100% {
     width: 100%;
   }
-}
+} */
 
 /* 클릭시 이벤트 */
-/* .ham_wrap:hover .bar {
+.ham_container_toggle {
   width: 120%;
 }
-.ham_wrap:hover .bar:nth-child(1) {
+.ham_first_bar_toggle {
   transform: rotate(45deg) translate(3px, 4px);
 }
-.ham_wrap:hover .bar:nth-child(2) {
+.ham_two_bar_toggle {
   transform: translateX(20px);
   opacity: 0;
 }
-.ham_wrap:hover .bar:nth-child(3) {
+.ham_three_bar_toggle {
   transform: rotate(-45deg) translate(3px, -4px);
-} */
+}
