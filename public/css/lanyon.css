@@ -675,7 +675,7 @@ a.pagination-item:hover {
 .ham_container {
   position: fixed;
   top: 1.8rem;
-  left: 1rem;
+  left: 0.6rem;
 }
 .ham_wrap {
   width: 30px;
