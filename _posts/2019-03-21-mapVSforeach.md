@@ -1,6 +1,6 @@
 ---
 layout: post
-title: map vs foreach
+title: map와 forEach의 차이점
 permalink: posts/mapVSforeach
 tag: javascript
 ---

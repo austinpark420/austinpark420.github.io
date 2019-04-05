@@ -1,6 +1,6 @@
 ---
 layout: post
-title: javascript module systems
+title: javascript 모듈 시스템이란?
 permalink: posts/javascript_module_systems
 tag: javascript
 ---
