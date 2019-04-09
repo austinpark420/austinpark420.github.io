@@ -1,6 +1,6 @@
 ---
 layout: post
-title: DOMContentLoaded 와 Load 이벤트의 차이는 무엇인가요?
+title: same origin policy란?
 permalink: posts/same-origin-policy
 tag: javascript HTTP security
 ---
