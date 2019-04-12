@@ -156,6 +156,8 @@ index.html 파일은 아래와 같은 코드를 포함하고 있습니다.
 </html>
 ```
 
+create-react-app를 사용해 봤다면 div 태그는 root id가 있다는 것이 익숙할 겁니다. 여기서는 react에대해서 가르치는 자리가 아니고 프레임워크에 대한 사용법을 어느정도 안다는 가정하에 이야기를 하고 있습니다. 아래 react코드를 사용할 예정입니다. bootstarp 3을 사용하고 있고 4개의 버튼이 랜더링 되고 각 버튼을 클릭하면 각기 다른 배경색으로 변경됩니다.
+
 ```javascript
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
@@ -231,7 +233,5 @@ class App extends Component {
 
 ReactDOM.render(<App />, document.getElementById("root"));
 ```
-
-create-react-app를 사용해 봤다면 div 태그는 root id가 있다는 것이 익숙할 겁니다. 여기서는 react에대해서 가르치는 자리가 아니고 프레임워크에 대한 사용법을 어느정도 안다는 가정하에 이야기를 하고 있습니다. 아래 react코드를 사용할 예정입니다. bootstarp 3을 사용하고 있고 4개의 버튼이 랜더링 되고 각 버튼을 클릭하면 각기 다른 배경색으로 변경됩니다.
 
 긴 과정이지만 노력할만한 가치가 있습니다. 터미널로 가서 `npm run build`를 입력하고 엔터를 누르면 dist 폴더에 있는 index.html을 브라우저에 드래그앤 드롭을 하면 됩니다! Netlify를 통해서 프로젝트를 배포했습니다.
