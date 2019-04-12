@@ -30,7 +30,7 @@ babel-core는 ES2015+ 코드를 호환 가능한 자바스크립트 하위버전
 
 루트 디렉토리로 이동한 다음, 우리의 경우 react-webpack-simple가 루트 디렉토리입니다. 여기서 .babelrc 라는 파잉을 만들어 줍니다. 이 파일은 앞으로 우리의 바벨을 어떻게 사용할지 설정을 하는 곳입니다. 위에 언급했던 것과 같이 @babel/preset-env와 @babel/preset-react을 작성합니다.
 
-```json
+```javascript
 // .babelrc 파일
 {
   "preset": ["@babel/preset-env", "@babel/preset-react"]
@@ -127,7 +127,7 @@ plugin 섹션에는 HtmlWebpackPlugin은 HTML 도큐먼트에서 자바스크립
 
 마지막으로 해야할 webpack 환경설정은 rimraf와 webpack-dev-server를 npm을 통해 설치하는 겁니다. rimraf는 기존 빌드된 파일을 지우고 새로운 파일은 생성해주는 라이브러리입니다. 이러한 방법으로 오래된 파일과 새로운 파일이 혼재되는 것을 방지할 수 있습니다. webpack-dev-server는 개발환경에서 사용하는데 코드가 변경될 때마다 자동적으로 브라우저가 리로드될 수 있게 만들어 프로젝트를 빌드할때마다 index.html 파일을 여는 번거로움을 막아줍니다. 또한 아래와 같이 package.json파일을 수정하세요. `npm run dev`는 빌드 파일을 생성하고 `npm run start`는 개발서버를 생성할 겁니다.
 
-```json
+```javascript
 // npm install --save-dev rimraf webpack-dev-server 를 먼저 실행하시는 것을 잊지 마세요.
 "script": {
     "clean": "rimraf dist",
@@ -156,75 +156,80 @@ index.html 파일은 아래와 같은 코드를 포함하고 있습니다.
 </html>
 ```
 
-```html
-import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
-import '../style/style.css';
+```javascript
+import React, { Component } from "react";
+import ReactDOM from "react-dom";
+import "../style/style.css";
 
 class App extends Component {
-	constructor(props) {
-		super(props);
-		this.state = {
-			changer: true
-		};
-	}
+  constructor(props) {
+    super(props);
+    this.state = {
+      changer: true
+    };
+  }
 
-	componentDidMount() {
+  componentDidMount() {}
 
-	}
-
-	render() {
-		return(
-			<div className="App">
-				<h1>Tester</h1>
-				<p>{ this.state.changer + '' }</p>
-				<button className="btn"
-					onClick={() => this.setState({ changer: !this.state.changer })}>
-					State Change
-				</button>
-				<div className="row">
-					<div className="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-						<button className="btn"
-							onClick={() => {
-								document.body.style.backgroundColor = '#ed6a5a';
-							}}>
-							ed6a5a
-						</button>
-					</div>
-					<div className="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-						<button className="btn"
-							onClick={() => {
-								document.body.style.backgroundColor = '#fbfffe';
-							}}>
-							fbfffe
-						</button>
-					</div>
-					<div className="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-						<button className="btn"
-							onClick={() => {
-								document.body.style.backgroundColor = '#f6a90a';
-							}}>
-							f6a90a
-						</button>
-					</div>
-					<div className="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-						<button className="btn"
-							onClick={() => {
-								document.body.style.backgroundColor = '#9bc1bc';
-							}}>
-							9bc1bc
-						</button>
-					</div>
-				</div>
-			</div>
-		);
-	}
+  render() {
+    return (
+      <div className="App">
+        <h1>Tester</h1>
+        <p>{this.state.changer + ""}</p>
+        <button
+          className="btn"
+          onClick={() => this.setState({ changer: !this.state.changer })}
+        >
+          State Change
+        </button>
+        <div className="row">
+          <div className="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+            <button
+              className="btn"
+              onClick={() => {
+                document.body.style.backgroundColor = "#ed6a5a";
+              }}
+            >
+              ed6a5a
+            </button>
+          </div>
+          <div className="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+            <button
+              className="btn"
+              onClick={() => {
+                document.body.style.backgroundColor = "#fbfffe";
+              }}
+            >
+              fbfffe
+            </button>
+          </div>
+          <div className="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+            <button
+              className="btn"
+              onClick={() => {
+                document.body.style.backgroundColor = "#f6a90a";
+              }}
+            >
+              f6a90a
+            </button>
+          </div>
+          <div className="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+            <button
+              className="btn"
+              onClick={() => {
+                document.body.style.backgroundColor = "#9bc1bc";
+              }}
+            >
+              9bc1bc
+            </button>
+          </div>
+        </div>
+      </div>
+    );
+  }
 }
 
-ReactDOM.render(
-	<App/>,
-	document.getElementById('root')
-);
+ReactDOM.render(<App />, document.getElementById("root"));
 ```
 
 create-react-app를 사용해 봤다면 div 태그는 root id가 있다는 것이 익숙할 겁니다. 여기서는 react에대해서 가르치는 자리가 아니고 프레임워크에 대한 사용법을 어느정도 안다는 가정하에 이야기를 하고 있습니다. 아래 react코드를 사용할 예정입니다. bootstarp 3을 사용하고 있고 4개의 버튼이 랜더링 되고 각 버튼을 클릭하면 각기 다른 배경색으로 변경됩니다.
