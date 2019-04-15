@@ -44,3 +44,46 @@ git을 사용할 때 팁은 .gitignore파일을 사용해 컴파일된 \_site �
 여기에 index.html 파일 맨 위에 추가할 수 있는 예시가 있습니다.
 
 홈페이지 세팅이 되어 있다면 지금 당장 콘텐츠를 추가해야합니다. 간단하게 페이지에 나타낼 HTML파일을 추가하면 됩니다.
+
+## gemfile and gemfile.lock
+
+gemfile은 루비의 의존성 관리 시스템이고 루비 프로젝트를 실행할 때 필요함 gem 리스트들을 포함하고 있습니다. jekyll 플러그인 설치할 때 주로 gemfile을 사용합니다.
+
+gem은 루비 프로젝트를 포함한 코드의 모음입니다. gemfile은 다른 사람의 코드를 가져와 프로젝트에 사용할 수 있게 합니다. gem은 아래와 같은 기능을 수행합니다.
+
+- 루비 프로젝트를 JSON으로 변환합니다.
+- 페이지네이션
+- Github와 같은 외부 API와 상호작용
+
+jekyll 자체 jekyll-paginate와 jekyll-feed 같은 jekyll 플러그인을 포함하고 있습니다.
+
+gemfile을 생성하거나 수정할 때 `$ bundle install`을 실행해야하며 그것은 아래와 같이 2가지 일을 실행합니다.
+
+- gemfile.lock 파일이 없다면 파일을 설치합니다. 해당 파일은 자동으로 생성되고 gemfile안에 있는 gem 추가되고 버전이 정해지지 않았더라도 버전이 포함됩니다. gemfile은 다른 개발자와 코드를 공유하도록 보장하며 모두 동일한 gems 버전을 가지고 있습니다.
+- gemd은 gemfile.lock에 다운로드 합니다.
+
+## .jekyll-metadata
+
+.jekyll-metadata는 jekyll이 빌드된 후에 수정되지 않은 파일과 다음에 빌딩할 때 재시작해야할 파일을 추적할 수 있습니다. 이 파일은 사이트를 생성된 사이트에 포함되지 않습니다. 이 파일을 .gitignore에 포함하는 것을 추천합니다.
+
+## \_layouts
+
+\_layouts 폴더에는 콘텐츠를 감쌀 템플릿이 포함되어 있습니다. 헤더와 푸터, 네이베이션과 같이 전형적으로 반복되는 코드가 \_layouts안에 포함되어 있습니다.
+
+## \_includes
+
+페이지의 일부분이 포함될 수 있습니다. 포함되어 있는 것들은 일반적으로 뉴스레터 구독폼과 푸터와 같이 중복으로 사용되는 페이지 입니다.
+
+{% raw %} {% include file.ext %} {% endraw %}와 같은 리퀴드 태그는 \_includes / file.ext에 부분을 포함시키는 데 사용할 수 있습니다.
+
+## \_drafts
+
+퍼블리싱 안되 블로그 포스트를 담아놓는 폴더입니다. \_draft폴더는 우리 실제 홈페이지에 퍼블리싱없이 작업할 수 있도록 도와줍니다.
+
+## \_data
+
+\_data는 YAML, JSON, CSV파일을 포함합니다. 이 파일안에 있는데이터는 jekyll 사이트에서 사용될 수 있습니다.
+
+## Other Files/Folders
+
+프론트 문제가 있는 파일들은 실행되어지고 \_site에 출력됩니다. 프론트 문제(HTML, CSS, javascript)가 없다면 \_site에 복제되어 빌드됩니다.
