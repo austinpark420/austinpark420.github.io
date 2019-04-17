@@ -79,6 +79,11 @@ a:focus {
   text-decoration: underline;
 }
 
+/* post hover */
+.post-hover:hover {
+  text-decoration: none;
+}
+
 /* Headings */
 h1,
 h2,
