@@ -15,5 +15,3 @@ tag: javascript
 
 - IIFE(Immediately Invoked Function Expressions)는 무엇인가요?
   - 즉시실행함수 표현식을 의미합니다. 익명 함수이며 즉시 실행되고 그 밖에 다른 곳에서 호출되지 않습니다.
-
----
