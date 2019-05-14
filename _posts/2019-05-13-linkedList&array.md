@@ -1,6 +1,6 @@
 ---
 layout: post
-title: async/linked list와 array의 차이
+title: linked list와 array의 차이
 permalink: posts/linkedListVSarray
 tag: javascript array linkedList
 ---
