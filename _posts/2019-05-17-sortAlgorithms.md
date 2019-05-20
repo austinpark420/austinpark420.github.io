@@ -98,3 +98,101 @@ function insertionSort(arr) {
   return arr;
 }
 ```
+
+## Merge Sort
+
+이것은 나누고 획득하는 알고리즘입니다.  
+배열을 하나의 작은 단위로 나누고 그것들을 비교하면서 합쳐나갑니다. 만약 아직도 제(필자)가 하는 이야기가 이해되지 않는다면 위키피디아에서 가져온 아래의 이미지를 확인해보세요.
+
+![merge sort image](https://khan4019.github.io/front-end-Interview-Questions/images/mergeSort.gif)
+
+code merge sort: 머지 소트는 2개의 파트가 있습니다. 메인 파트는 나누는 파트이고 두 번째 파트는 합치는 파트입니다.
+divide: mergeSort의 첫 번째 함수는 나누는 함수입니다.
+merge: 나눠진 배열을 합치는 것입니다. 두 배열이 크기가 다를 수 있다는 것을 주의하시기 바랍니다.
+
+```javascript
+function mergeSort(arr) {
+  var len = arr.length;
+  if (len < 2) return arr;
+  var mid = Math.floor(len / 2),
+    left = arr.slice(0, mid),
+    right = arr.slice(mid);
+  return merge(mergeSort(left), mergeSort(right));
+}
+```
+
+```javascript
+function merge(left, right) {
+  var result = [],
+    lLen = left.length,
+    rLen = right.length,
+    l = 0,
+    r = 0;
+  while (l < lLen && r < rLen) {
+    if (left[l] < right[r]) {
+      result.push(left[l++]);
+    } else {
+      result.push(right[r++]);
+    }
+  }
+
+  return result.concat(left.slice(l)).concat(right.slice(r));
+}
+```
+
+## Quick sort
+
+### 동작 원리
+
+- step1: 피봇을 선택해야합니다. 랜덤으로 선택되거나 중간 지점입니다. 여기서 우리는 마지막 배열의 요소를 선택합니다.
+- step2: 피봇을 기준으로 작은 수는 왼쪽에 큰 수는 오른쪽에 배치합니다.
+- step3: step2를 반복적으로 실행합니다.
+
+### 코드 예시
+
+- 퀵 소트 호출: 배열을 전달하고 퀵 소트 함수에 왼쪽 오른쪽에 전달합니다. 첫 번째 호출에서 left는 첫 번째 요소의 인덱스가 0이고 right는 마자막 요소의 인덱스가 -1입니다.
+- 피봇 선택: 배열의 마지막 인덱스를 피봇으로 선택합니다.
+- 파디션 함수 호출: 파티션 함수에서 피봇보다 작은 수를 왼쪽에 큰 수를 오른쪽에 배치합니다. 우리는 파티션의 위치를 추적해야합니다. 그러기위해서는 다음 스텝에서 배열을 2개로 나눌 수 있습니다. 배열을 분열하는 인덱스를 추적하는 것은 partitionindex 변수를 사용해서 수행됩니다. 초기값은 왼쪽에 있습니다.
+- swap function: 배열의 값을 교환할 때 도움을 주는 함수입니다.
+- move elements: 왼쪽부터 반복문을 실행합니다. 그리고 값이 피봇값보다 작으면 partitionindex를 바꾸고 partitionindex 값을 늘립니다. 만약 값이 크다면 아무 것도 하지 않습니다. 마지막 요소까지 같은 일은 반복합니다.(마지막 요소가 피봇이라는 것을 기억하세요)
+- place pivot: 작은 요소를 왼쪽으로 모두 이동시켰다면 마지막 요소(피봇 값)을 patitionindex와 함께 교환합니다.
+- repeat the process: 다시 퀵 소트 함수로 돌아와서 partitionindex를 활용해서 배열의 왼쪽, 오른쪽 사이드에 각각 적용합니다.
+
+```javascript
+function quickSort(arr, left, right) {
+  var len = arr.length,
+    pivot,
+    partitionIndex;
+
+  if (left < right) {
+    pivot = right;
+    partitonIndex = partition(arr, pivot, left, right);
+
+    quickSort(arr, left, partitionIndex - 1);
+    quickSort(arr, partitionIndex + 1, right);
+  }
+  return arr;
+}
+
+function partition(arr, pivot, left, right) {
+  var pivotValue = arr[pivot],
+    partitionIndex = left;
+
+  for (var i = left; i < right; i++) {
+    if (arr[i] < pivotValue) {
+      swap(arr, i, partitionIndex);
+      partitionIndex++;
+    }
+  }
+  swap(arr, right, partitionIndex);
+  return partitionIndex;
+}
+
+function swap(arr, i, j) {
+  var temp = arr[i];
+  arr[i] = arr[j];
+  arr[j] = temp;
+}
+```
+
+![quickSort image](https://khan4019.github.io/front-end-Interview-Questions/images/quickSort.png)
