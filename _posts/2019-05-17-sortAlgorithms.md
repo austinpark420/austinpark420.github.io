@@ -19,18 +19,18 @@ tag: javascript sort algorithms
 - step 6. 그 다음에 다시 안에 있는 반복문으로 들어가게됩니다.
 
 ```javascript
-function bubbleSort(arr){
-    len = arr.length;
-    for(var i = len-1; i >= 0; i--) {
-        fort(j = 1; j <= i; i++){
-            if(arr[j-1] > arr[j]){
-                var temp = arr[j-1];
-                arr[j-1] = arr[j];
-                arr[j] = temp;
-            }
-        }
+function bubbleSort(arr) {
+  len = arr.length;
+  for (var i = len - 1; i >= 0; i--) {
+    for (j = 1; j <= i; j++) {
+      if (arr[j - 1] > arr[j]) {
+        var temp = arr[j - 1];
+        arr[j - 1] = arr[j];
+        arr[j] = temp;
+      }
     }
-    return arr;
+  }
+  return arr;
 }
 ```
 
