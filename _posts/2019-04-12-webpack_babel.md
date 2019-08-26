@@ -2,7 +2,7 @@
 layout: post
 title: react를 통한 기본적인 webpack과 babel 사용법
 permalink: posts/webpack-babel
-tag: javascript react webpack babel
+tag: [javascript, react, webpack, babel]
 ---
 
 > 해당 포스트는 [Webpack, Babel, and React from Scratch — BUT WHY?](https://hackernoon.com/webpack-babel-and-react-from-scratch-but-why-889a385ff32f)를 번역하여 작성하였습니다. 잘못된 부분이 있다면 댓글 부탁드립니다.

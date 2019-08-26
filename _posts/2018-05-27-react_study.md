@@ -2,7 +2,7 @@
 layout: post
 title: React 정리
 permalink: posts/react_study
-tag: frontend react
+tag: [frontend, react]
 ---
 
 ## React

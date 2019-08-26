@@ -2,7 +2,7 @@
 layout: post
 title: 컴퓨터과학개론
 permalink: posts/computer_science
-tag: computer science basic
+tag: [computer, basic]
 ---
 
 > 해당 포스트는 방송통신대학교 교제인 [컴퓨터과학개론](http://press.knou.ac.kr/goods/textBookView.do?condCmdtCode=9788920015120&condLscValue=001&condYr=&condSmst=)을 찹고하여 작성하였습니다. 잘못된 부분이 있다면 댓글 부탁드립니다.

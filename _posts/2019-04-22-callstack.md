@@ -2,7 +2,7 @@
 layout: post
 title: 자바스크립트의 콜스택이란?
 permalink: posts/callstack
-tag: javascript callstack
+tag: [javascript, callstack]
 ---
 
 > 해당 포스트는 [Understanding the JavaScript call stack](https://medium.freecodecamp.org/understanding-the-javascript-call-stack-861e41ae61d4)를 번역하여 작성하였습니다. 잘못된 부분이 있다면 댓글 부탁드립니다.

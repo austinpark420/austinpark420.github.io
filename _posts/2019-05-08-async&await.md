@@ -2,7 +2,7 @@
 layout: post
 title: async/await에 대해서
 permalink: posts/async&await
-tag: javascript ECMAScript
+tag: [javascript, ECMAScript]
 ---
 
 > 해당 포스트는 [How To Master Async/Await With This Real World Example](https://medium.freecodecamp.org/how-to-master-async-await-with-this-real-world-example-19107e7558ad)를 번역하여 작성하였습니다. 잘못된 부분이 있다면 댓글 부탁드립니다.
@@ -10,7 +10,7 @@ tag: javascript ECMAScript
 1. callbacks, promises, async/await 소개
 2. 사용 예시 - 환율계산기, 2개의 API로 비동기로 데이터 전달받기
 
-필자는 해당 아티클과 함께 유튜브 동영상도 함께 제작했습니다. 글을 먼저 읽고 유튜브를 보는 것을 추천드립니다.  
+필자는 해당 아티클과 함께 유튜브 동영상도 함께 제작했습니다. 글을 먼저 읽고 유튜브를 보는 것을 추천드립니다.
 [유튜브 바로가기](https://www.youtube.com/watch?v=mlb525FgU3k)
 
 ## 소개

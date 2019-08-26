@@ -2,7 +2,7 @@
 layout: post
 title: Homebrew와 NPM(macOS x)의 차이점
 permalink: posts/homebrew-npm
-tag: homebrew npm macos
+tag: [homebrew, npm, macos]
 ---
 
 > 해당 포스트는 [What is the difference between Homebrew and NPM (macOS X)?](https://www.quora.com/What-is-the-difference-between-Homebrew-and-NPM-macOS-X)를 번역하여 작성하였습니다. 잘못된 부분이 있다면 댓글 부탁드립니다.

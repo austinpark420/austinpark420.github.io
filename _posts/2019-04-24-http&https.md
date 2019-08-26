@@ -2,7 +2,7 @@
 layout: post
 title: http vs https
 permalink: posts/httpVShttps
-tag: javascript http https
+tag: [javascript, HTTP]
 ---
 
 > 해당 포스트는 [What’s the Difference between HTTP and HTTPS?](https://www.globalsign.com/en/blog/the-difference-between-http-and-https/)를 번역하여 작성하였습니다. 잘못된 부분이 있다면 댓글 부탁드립니다.

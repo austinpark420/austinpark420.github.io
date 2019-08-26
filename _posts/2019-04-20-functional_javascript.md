@@ -2,7 +2,7 @@
 layout: post
 title: 함수형 자바스크립트란?
 permalink: posts/functionalJavascipt
-tag: javascript function
+tag: [javascript, function]
 ---
 
 > 해당 포스트는 [Functional Programming in JavaScript](https://codeburst.io/functional-programming-in-javascript-e57e7e28c0e5)를 번역하여 작성하였습니다. 잘못된 부분이 있다면 댓글 부탁드립니다.

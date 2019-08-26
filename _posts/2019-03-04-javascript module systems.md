@@ -2,7 +2,7 @@
 layout: post
 title: javascript 모듈 시스템이란?
 permalink: posts/javascript_module_systems
-tag: javascript
+tag: [javascript]
 ---
 
 > 해당 포스트는 [JavaScript Module Systems Showdown: CommonJS vs AMD vs ES2015](https://auth0.com/blog/javascript-module-systems-showdown/)을 번역한 컨텐츠입니다. 오역한 부분이 있으면 댓글 부탁드립니다.

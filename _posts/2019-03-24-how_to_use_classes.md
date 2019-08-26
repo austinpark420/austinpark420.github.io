@@ -2,7 +2,7 @@
 layout: post
 title: ES6에서 class를 어떻게 사용할까요?
 permalink: posts/class
-tag: javascript
+tag: [javascript]
 ---
 
 > 해당 포스트는 [How to Use Classes and Sleep at Night](https://medium.com/@dan_abramov/how-to-use-classes-and-sleep-at-night-9af8de78ccb4)를 참고하여 작성하였습니다. 잘못된 부분이 있다면 댓글 부탁드립니다.

@@ -2,7 +2,7 @@
 layout: post
 title: absolute와 float 비교
 permalink: posts/absoluteandfloat
-tag: frontend html css absolute float
+tag: [frontend, html, css, absolute, float]
 ---
 
 absolute와 float는 모두 일반적인 흐름을 벗어난다. 그렇다면 그 이외에 어떤 차이가 있는지 알아보자.

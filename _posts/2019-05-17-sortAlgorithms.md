@@ -2,7 +2,7 @@
 layout: post
 title: 정렬 알고리즘(sort algorithms)
 permalink: posts/sortAlgorithms
-tag: javascript sort algorithms
+tag: [javascript, sort, algorithm]
 ---
 
 > 해당 포스트는 [JS: Interview Questions](https://khan4019.github.io/front-end-Interview-Questions/sort.html)를 번역하여 작성하였습니다. 잘못된 부분이 있다면 댓글 부탁드립니다.
@@ -36,8 +36,8 @@ function bubbleSort(arr){
 
 ## selection sort
 
-동작 원리: 정말 간단합니다. 배열을 통해 가장 낮은 요소를 찾고 첫 번째 요소와 위치를 변경합니다. 그러면 가장 작은 요소는 배열의 첫 번째에 위치힙니다.  
-다음으로 첫 번째 인덱스를 제외하고 가장 작은 요소를 찾고 두 번째 인덱스에 위치시킵니다.  
+동작 원리: 정말 간단합니다. 배열을 통해 가장 낮은 요소를 찾고 첫 번째 요소와 위치를 변경합니다. 그러면 가장 작은 요소는 배열의 첫 번째에 위치힙니다.
+다음으로 첫 번째 인덱스를 제외하고 가장 작은 요소를 찾고 두 번째 인덱스에 위치시킵니다.
 이것은 배열에서 가장 작은 요소를 찾고 배열의 왼쪽부터 위치시키는 것입니다.
 
 ![selection sort img](https://khan4019.github.io/front-end-Interview-Questions/images/selectionSort.png)
@@ -101,7 +101,7 @@ function insertionSort(arr) {
 
 ## Merge Sort
 
-이것은 나누고 획득하는 알고리즘입니다.  
+이것은 나누고 획득하는 알고리즘입니다.
 배열을 하나의 작은 단위로 나누고 그것들을 비교하면서 합쳐나갑니다. 만약 아직도 제(필자)가 하는 이야기가 이해되지 않는다면 위키피디아에서 가져온 아래의 이미지를 확인해보세요.
 
 ![merge sort image](https://khan4019.github.io/front-end-Interview-Questions/images/mergeSort.gif)

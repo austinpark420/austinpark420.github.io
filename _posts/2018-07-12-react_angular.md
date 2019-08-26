@@ -2,7 +2,7 @@
 layout: post
 title: react 와 angular의 차이점
 permalink: posts/react_angular
-tag: frontend dev javascript react angular
+tag: [frontend, dev, javascript, react, angular]
 ---
 
 1. view를 그리기

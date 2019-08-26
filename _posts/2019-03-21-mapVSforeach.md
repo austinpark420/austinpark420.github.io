@@ -2,7 +2,7 @@
 layout: post
 title: map와 forEach의 차이점
 permalink: posts/mapVSforeach
-tag: javascript
+tag: [javascript]
 ---
 
 > 해당 포스트는 [JavaScript — Map vs. ForEach](https://codeburst.io/javascript-map-vs-foreach-f38111822c0f)를 참고하여 작성하였습니다. 잘못된 부분이 있다면 댓글 부탁드립니다.

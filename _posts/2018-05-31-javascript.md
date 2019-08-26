@@ -2,7 +2,7 @@
 layout: post
 title: javascript 노트
 permalink: posts/javascript
-tag: frontend dev javascript fundemental
+tag: [frontend, dev, javascript, fundemental]
 ---
 
 개발을 처음 시작했을 때 많은 것들이 어려웠다. 그 중 하나가 개발용어였다. 우선 간단하게 나의 언어로 정리해보기로 했다.

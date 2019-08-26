@@ -2,7 +2,7 @@
 layout: post
 title: jekyll 폴더 구조 살펴보기
 permalink: posts/jekyll-structure
-tag: javascript jekyll github githubpage theme
+tag: [javascript, jekyll, github, githubpage, theme]
 ---
 
 > 해당 포스트는 [Jekyll File Structure](https://medium.com/@r3id/jekyll-file-structure-f28c496f8dc0)를 번역하여 작성하였습니다. 잘못된 부분이 있다면 댓글 부탁드립니다.

@@ -2,7 +2,7 @@
 layout: post
 title: attribute 와 property의 차이점은 무엇인가요?
 permalink: posts/attribute-property
-tag: javascript HTML
+tag: [javascript, HTML]
 ---
 
 > 해당 포스트는 [What is the difference between properties and attributes in HTML?](https://stackoverflow.com/questions/6003819/what-is-the-difference-between-properties-and-attributes-in-html)을 번역하여 작성하였습니다. 잘못된 부분이 있다면 댓글 부탁드립니다.

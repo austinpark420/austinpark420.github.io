@@ -2,7 +2,7 @@
 layout: post
 title: github blog 만들기_jekyll
 permalink: posts/githubblogsetting_jekyll
-tag: jekyll blog github pages
+tag: [jekyll, blog, github, pages]
 ---
 - github blog repo만들기
 - github blog repo clone 하기
