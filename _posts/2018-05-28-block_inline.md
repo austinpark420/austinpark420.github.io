@@ -2,7 +2,7 @@
 layout: post
 title: block과 line 비교
 permalink: posts/blockandinline
-tag: frontend html css inline block
+tag: [frontend, html, css, inline, block]
 ---
 
 ### block

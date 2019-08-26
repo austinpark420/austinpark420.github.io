@@ -2,7 +2,7 @@
 layout: post
 title: webpack의 코어 컨셉
 permalink: posts/webpack
-tag: javascript webpack
+tag: [javascript, webpack]
 ---
 
 > 해당 포스트는 [Webpack concepts](https://webpack.js.org/concepts/)를 번역하여 작성하였습니다. 잘못된 부분이 있다면 댓글 부탁드립니다.

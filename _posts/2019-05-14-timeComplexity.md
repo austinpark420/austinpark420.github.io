@@ -2,7 +2,7 @@
 layout: post
 title: 시간 복잡도(Time Complexity)
 permalink: posts/timeComplexity
-tag: javascript
+tag: [javascript]
 ---
 
 > 해당 포스트는 [Time Complexity Analysis in JavaScript](https://www.jenniferbland.com/time-complexity-analysis-in-javascript/)를 번역하여 작성하였습니다. 잘못된 부분이 있다면 댓글 부탁드립니다.

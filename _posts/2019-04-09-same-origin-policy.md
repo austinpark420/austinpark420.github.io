@@ -2,7 +2,7 @@
 layout: post
 title: same origin policy란?
 permalink: posts/same-origin-policy
-tag: javascript HTTP security
+tag: [javascript, HTTP, security]
 ---
 
 > 해당 포스트는 [https://en.wikipedia.org/wiki/Same-origin_policy](https://en.wikipedia.org/wiki/Same-origin_policy)를 번역하여 작성하였습니다. 잘못된 부분이 있다면 댓글 부탁드립니다.

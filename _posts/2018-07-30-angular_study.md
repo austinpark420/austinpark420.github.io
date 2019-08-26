@@ -2,7 +2,7 @@
 layout: post
 title: Angular 개념정리
 permalink: posts/angular_study
-tag: frontend Angular
+tag: [frontend, Angular]
 ---
 
 ### Angular CSS

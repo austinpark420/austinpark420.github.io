@@ -2,7 +2,7 @@
 layout: post
 title: 이벤트 루프란 무엇인가?
 permalink: posts/eventloop
-tag: javascript eventloop
+tag: [javascript, eventloop]
 ---
 
 > 해당 포스트는 [Understanding JS: The Event Loop](https://hackernoon.com/understanding-js-the-event-loop-959beae3ac40)를 번역하여 작성하였습니다. 잘못된 부분이 있다면 댓글 부탁드립니다.

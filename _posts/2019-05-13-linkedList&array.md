@@ -2,7 +2,7 @@
 layout: post
 title: linked list와 array의 차이
 permalink: posts/linkedListVSarray
-tag: javascript array linkedList
+tag: [javascript, array, linkedList]
 ---
 
 > 해당 포스트는 [Linked List vs Array](https://www.geeksforgeeks.org/linked-list-vs-array/)를 번역하여 작성하였습니다. 잘못된 부분이 있다면 댓글 부탁드립니다.

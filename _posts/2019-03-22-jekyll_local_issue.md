@@ -2,7 +2,7 @@
 layout: post
 title: jekyll 로컬 설치 이슈
 permalink: posts/jekyllIssue
-tag: javascript
+tag: [javascript]
 ---
 
 ## jekyll 로컬서버 install 이슈

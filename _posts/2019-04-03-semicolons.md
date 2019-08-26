@@ -2,7 +2,7 @@
 layout: post
 title: javascript에서 세미콜론 사용법
 permalink: posts/semicolons-in-javascript
-tag: javascript syntax
+tag: [javascript, syntax]
 ---
 
 > 해당 포스트는 [Your Guide to Semicolons in JavaScript](https://news.codecademy.com/your-guide-to-semicolons-in-javascript/)을 번역하여 작성하였습니다. 잘못된 부분이 있다면 댓글 부탁드립니다.

@@ -2,7 +2,7 @@
 layout: post
 title: 개발용어 공부하는 법
 permalink: posts/devstudy
-tag: frontend dev
+tag: [frontend, dev]
 ---
 저와 같이 이제 막 개발공부를 시작했다면, 어려운 점 중 하나가 개발용어를 이해하는 부분 일 것 입니다. node.js, npm, routing, Framework, library 등등...
 

@@ -2,7 +2,7 @@
 layout: post
 title: 네이티브객체와 호스트객체는 무엇이 다를까요?
 permalink: posts/hostObj_vs_nativeObj
-tag: javascript Object
+tag: [javascript, object]
 ---
 
 > 해당 포스트는 [What is the difference between native objects and host objects?](https://stackoverflow.com/questions/7614317/what-is-the-difference-between-native-objects-and-host-objects)를 참고하여 작성하였습니다. 잘못된 부분이 있다면 댓글 부탁드립니다.
