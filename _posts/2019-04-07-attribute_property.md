@@ -19,7 +19,7 @@ HTML 소스코드를 작성할 때, HTML 엘리먼트안에서 attribute를 정�
 
 주어진 DOM 노드 객체 property를 가지고 있고, attribute는 attribute property의 구성요소입니다.
 
-DOM 노드가 주어진 HTML 엘리먼트에 의해 생성되면 많은 property들은 attribute 이름과 동일하거나 비슷합니다. 하지만 1:1로 매칭되는 것은 아닙니다. 예를들어 아래 HTML 코드를 보면
+DOM 노드가 주어진 HTML 엘리먼트에 의해 생성되면 많은 property는 attribute 이름과 동일하거나 비슷합니다. 하지만 1:1로 매칭되는 것은 아닙니다. 예를들어 아래 HTML 코드를 보면
 
 ```html
 <input id="the-input" type="text" value="Name:" />

@@ -7,11 +7,11 @@ tag: [javascript, webpack]
 
 > 해당 포스트는 [Webpack concepts](https://webpack.js.org/concepts/)를 번역하여 작성하였습니다. 잘못된 부분이 있다면 댓글 부탁드립니다.
 
-webpack에서 가장 중요한 것은 모던 자바스크립트 어플리케이션을 위해 모듈을 번들링하는 것입니다. 어플리케이션에서 webpack이 동작할 때 내부적으로 [의존성 그래프](https://webpack.js.org/concepts/dependency-graph/)를 생성합니다. 이것은 프로젝트에 필요한 모든 모듈을 묶고 하나 혹은 그이상의 번들을 생성합니다.
+webpack에서 가장 중요한 것은 모던 자바스크립트 어플리케이션을 위해 모듈을 번들링하는 것입니다. 어플리케이션에서 webpack이 동작할 때 내부적으로 [의존성 그래프](https://webpack.js.org/concepts/dependency-graph/)를 생성합니다. 이것은 프로젝트에 필요한 모든 모듈을 묶고 하나 혹은 그 이상의 번들을 생성합니다.
 
 > 자바스크립트 모듈과 webpack모듈에 대해서 더 알고 싶다면 [여기](https://webpack.js.org/concepts/modules/)를 참고하세요.
 
-ver4.0.0이후 webpack에서 프로젝트를 번들링하기위해서 더 이상 환경설정파일이 필요없어 졌습니다. 그렇지만 그것은 [당신의 필요](https://webpack.js.org/configuration/)로 사용할 수 있습니다.
+ver4.0.0이후 webpack에서 프로젝트를 번들링하기위해서 더는 환경설정파일이 필요없어 졌습니다. 그렇지만 그것은 [당신의 필요](https://webpack.js.org/configuration/)로 사용할 수 있습니다.
 
 webpack을 시작하기위해서 그것의 코어 컨셉에대해서 알아야합니다.
 
@@ -22,7 +22,7 @@ webpack을 시작하기위해서 그것의 코어 컨셉에대해서 알아야�
 - [Mode](#Mode)
 - [Browser Compatibility](#BrowserCompatibility)
 
-이 도규먼트는 코어 개념을 제공하고 있고, 좀 더 자세한 내용이 궁금하면 아래의 링크를 참조 부탁드립니다.
+이 도큐먼트는 코어 개념을 제공하고 있고, 좀 더 자세한 내용이 궁금하면 아래의 링크를 참조하시기 바랍니다.
 
 이는 모듈 번들러와 그들이 어떻게 동작하고 리소스를 어떻게 다루는지에 대한 내용이 나왔습니다.
 
@@ -52,7 +52,7 @@ module.export = {
 
 ## Output
 
-output 프로퍼티는 webpack이 번들링한 파일을 어디에 저장하고 파일이름을 어떻게할지 설정합니다. ./dist/main.js가 파일이 아웃풋되는 디폴트 값이고, ./dist에 다른 파일들이 생성됩니다.
+output 프로퍼티는 webpack이 번들링한 파일을 어디에 저장하고 파일이름을 어떻게 할지 설정합니다. ./dist/main.js가 파일이 아웃풋되는 디폴트 값이고, ./dist에 다른 파일들이 생성됩니다.
 
 output 필드의 환경설정을 변경해서 디폴트값을 변경할 수 있습니다.
 

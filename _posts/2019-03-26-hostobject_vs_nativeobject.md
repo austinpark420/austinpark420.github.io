@@ -7,7 +7,7 @@ tag: [javascript, object]
 
 > 해당 포스트는 [What is the difference between native objects and host objects?](https://stackoverflow.com/questions/7614317/what-is-the-difference-between-native-objects-and-host-objects)를 참고하여 작성하였습니다. 잘못된 부분이 있다면 댓글 부탁드립니다.
 
-아래 내용은 ECMAScript에 게제되어있는 스펙입니다.
+아래 내용은 ECMAScript에 게재되어있는 스펙입니다.
 
 ### 네이티브 객체
 
@@ -20,7 +20,7 @@ tag: [javascript, object]
 
 ### 호스트 객체
 
-- ECMASrcipt의 실행 환경을 만들기위해 호스트 환경에서 제공된 객채입니다.
+- ECMASrcipt의 실행 환경을 만들기위해 호스트 환경에서 제공된 객체입니다.
   NOTE 네이티브객체가 아니면 호스트객체 입니다.
 
   예시(브라우저 환경일 때): window, document, location, history, XMLHttpRequest, setTimeout, getElementsByTagName, querySelectorAll, ...
