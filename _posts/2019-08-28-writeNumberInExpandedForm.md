@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: write Number in Expanded Form
