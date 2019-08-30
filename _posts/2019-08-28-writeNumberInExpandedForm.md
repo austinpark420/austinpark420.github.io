@@ -1,6 +1,6 @@
 ---
 layout: post
-title: write Number in Expanded Form
+title: 알고리즘 - write Number in Expanded Form
 permalink: posts/writeNumber
 tag: algorithm
 ---

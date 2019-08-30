@@ -1,6 +1,6 @@
 ---
 layout: post
-title: High frequency String
+title: 알고리즘 - High frequency String
 permalink: posts/highFrequency
 tag: algorithm
 ---
