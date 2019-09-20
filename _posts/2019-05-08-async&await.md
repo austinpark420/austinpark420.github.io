@@ -17,7 +17,7 @@ tag: [javascript, async/await]
 
 Async/await는 비동기 코드를 작성하는 새로운 방법입니다. promises를 기반으로 설계되었기 때문에 논 블럭입니다.
 
-async 코드의 장점은 보기에도 동기 코드와 같이 보이고 동기 코드와 같이 행동합니다. 이것이 Async/await의 ㅈㅏㅇ점입니다.
+async 코드의 장점은 보기에도 동기 코드와 같이 보이고 동기 코드와 같이 행동합니다. 이것이 Async/await의 장점입니다.
 
 우선 callbacks과 promises를 살펴봅시다.
 
