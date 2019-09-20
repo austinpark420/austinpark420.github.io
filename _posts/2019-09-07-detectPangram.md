@@ -13,9 +13,8 @@ Given a string, detect whether or not it is a pangram. Return True if it is, Fal
 
 ## 풀이과정
 
-1. 주어진 word의 알파벳 숫자와 words 요소의 알파벳 숫자가 동일한 요소를 출력해야함.
-2. filter를 사용해서 word의 알파벳과 words 요소의 알파벳을 정렬한다.
-3. 정렬한 값을 비교해서 word와 동일하게 정렬된 words의 요소를 출력한다.
+1. 알파벳을 식별할 수 있는 변수를 생성한다.
+2. 주어진 문자열을 순회하면서 알파벳을 포함하는지 확인한다.
 
 ### code
 

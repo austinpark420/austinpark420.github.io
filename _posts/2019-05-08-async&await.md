@@ -2,7 +2,7 @@
 layout: post
 title: async/await에 대해서
 permalink: posts/async&await
-tag: [javascript, ECMAScript]
+tag: [javascript, async/await]
 ---
 
 > 해당 포스트는 [How To Master Async/Await With This Real World Example](https://medium.freecodecamp.org/how-to-master-async-await-with-this-real-world-example-19107e7558ad)를 번역하여 작성하였습니다. 잘못된 부분이 있다면 댓글 부탁드립니다.
@@ -10,18 +10,14 @@ tag: [javascript, ECMAScript]
 1. callbacks, promises, async/await 소개
 2. 사용 예시 - 환율계산기, 2개의 API로 비동기로 데이터 전달받기
 
-<<<<<<< HEAD
-필자는 해당 아티클과 함께 유튜브 동영상도 함께 제작했습니다. 글을 먼저 읽고 유튜브를 보는 것을 추천드립니다.
-=======
-필자는 해당 아티클과 함께 유튜브 동영상도 함께 제작했습니다. 글을 먼저 읽고 유튜브를 보는 것을 추천해 드립니다.  
->>>>>>> 08f9a54f67295ea192e973146a006107d34a807e
+필자는 해당 아티클과 함께 유튜브 동영상도 함께 제작했습니다. 글을 먼저 읽고 유튜브를 보는 것을 추천해 드립니다.
 [유튜브 바로가기](https://www.youtube.com/watch?v=mlb525FgU3k)
 
 ## 소개
 
 Async/await는 비동기 코드를 작성하는 새로운 방법입니다. promises를 기반으로 설계되었기 때문에 논 블럭입니다.
 
-async 코드의 장점은 보기에도 동기 코드와 같이 보이고 동기 코드와 같이 행동합니다. 이것이 Async/await의 이점입니다.
+async 코드의 장점은 보기에도 동기 코드와 같이 보이고 동기 코드와 같이 행동합니다. 이것이 Async/await의 ㅈㅏㅇ점입니다.
 
 우선 callbacks과 promises를 살펴봅시다.
 
@@ -29,7 +25,7 @@ async 코드의 장점은 보기에도 동기 코드와 같이 보이고 동기 
 
 ```javascript
 setTimeout(() => {
-  console.log("This run after 1000 milliseconds.");
+  console.log('This run after 1000 milliseconds.');
 }, 1000);
 ```
 
@@ -95,12 +91,12 @@ promise와 async/await의 차이점은 아래와 같습니다.
 
 ```javascript
 // async/await
-const asyncGreeting = async () => "Greetings";
+const asyncGreeting = async () => 'Greetings';
 
 // promise
 const promiseGreeting = () =>
   new Promise(resolve => {
-    resolve("Greetings");
+    resolve('Greetings');
   });
 
 asyncGreeting().then(result => console.log(result));
@@ -131,11 +127,11 @@ async/await는 동기함수처럼 보이고 이해하기 쉽습니다.
 
 ### async/await에 대해서 알아 봅시다.
 
-이 어플리케이션에서 우리의 목표는 3가지 함수를 가지는 것 입니다. 3개의 비동기 함수가 필요합니다. 첫 번째 함수는 환율을 패치하는 것이고, 두 번째 함수는 국가에 대한 정보를 가지고 오는 것이고, 세 번째 함수는 정보를 한곳에 모아서 유저에서 멋지게 보여주는 것 입니다.
+이 어플리케이션에서 우리의 목표는 3가지 함수를 가지는 것 입니다. 3개의 비동기 함수가 필요합니다. 첫 번째 함수는 환율을 패치하는 것이고, 두 번째 함수는 국가에 대한 정보를 가지고 오는 것이고, 세 번째 함수는 정보를 한곳에 모아서 유저에서 멋지게 보여주는 것입니다.
 
 ### 첫 번째 함수 = 비동기로 환율 데이터 받아오기
 
-우리는 환율을 계산할 2개의 통화를 인수로 전달받은 비동기함수를 만들예정입니다.
+우리는 환율을 계산할 2개의 통화를 인수로 전달받은 비동기함수를 만들 예정입니다.
 
 ```javascript
 const getExchangeRate = async (fromCurrency, toCurrency) => {};
@@ -146,7 +142,7 @@ const getExchangeRate = async (fromCurrency, toCurrency) => {};
 ```javascript
 const getExchangeRate = async (fromCurrency, toCurrency) => {
   const response = await axios.get(
-    "http://data.fixer.io/api/latest?access_key=[yourAccessky]&format=1"
+    'http://data.fixer.io/api/latest?access_key=[yourAccessky]&format=1'
   );
 };
 ```
@@ -169,12 +165,12 @@ const euro = 1 / rate[fromCurrency];
 const exchangeRate = euro * rate[toCurrency];
 ```
 
-마지마그로 함수는 아래와 같습니다.
+마지막으로 함수는 아래와 같습니다.
 
 ```javascript
 const getExchangeRate = async (fromCurrency, toCurrency) => {
   const response = await axios.get(
-    "http://data.fixer.io/api/latest?access_key=[yourAccessky]&format=1"
+    'http://data.fixer.io/api/latest?access_key=[yourAccessky]&format=1'
   );
 
   const rate = response.data.rates;
@@ -220,7 +216,7 @@ const getCountries = async currencyCode => {
 
 ### 세 번째 함수 - 모든 것을 합치기
 
-우리는 fromCurrency와 toCurrency, 금액을 취하는 비동기함수를 만들 예정입니다.
+우리는 fromCurrency와 toCurrency, 금액을 받는 비동기함수를 만들 예정입니다.
 
 ```javascript
 const convert = async (fromCurrency, toCurrency, amount) => {};
@@ -270,7 +266,7 @@ const convert = async (fromCurrency, toCurrency, amount) => {
 const getExchangeRate = async (fromCurrency, toCurrency) => {
   try {
     const response = await axios.get(
-      "http://data.fixer.io/api/latest?access_key=f68b13604ac8e570a00f7d8fe7f25e1b&format=1"
+      'http://data.fixer.io/api/latest?access_key=f68b13604ac8e570a00f7d8fe7f25e1b&format=1'
     );
     const rate = response.data.rates;
     const euro = 1 / rate[fromCurrency];
@@ -304,7 +300,7 @@ const getCountries = async currencyCode => {
 마지막으로 함수를 호출하고 데이터를 전달 받습니다.
 
 ```javascript
-convertCurrency("USD", "HRK", 20)
+convertCurrency('USD', 'HRK', 20)
   .then(message => {
     console.log(message);
   })
