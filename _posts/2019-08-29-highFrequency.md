@@ -4,14 +4,16 @@ title: 알고리즘 - High frequency String
 permalink: posts/highFrequency
 tag: algorithm
 ---
+
 ## 문제
+
 입력받은 문자열에서 빈도수가 가장 많은 알파벳을 반환하세요. 만약 빈도가 같은 알파벳이 있다면 먼저 나온 알파벳을 반환하세요.
 
 ### 예시
+
 ```javascript
 highFrequency('aabbbccc'); // Should return 'b'
 highFrequency('aabbbcccc'); // Should return 'c'
-
 ```
 
 ## 풀이과정
@@ -22,16 +24,17 @@ highFrequency('aabbbcccc'); // Should return 'c'
 4. highFrequencyStringNumber 와 currentStringNumber를 비교해 highFrequencyStringNumber의 값을 변경 혹은 유지함.
 
 ### code
+
 ```javascript
 function highFrequency(string) {
   let result = '';
   let highFrequencyStringNumber = 0;
   let currentStringNumber = 0;
 
-  for (let i = 0; i < string.length; i++){
+  for (let i = 0; i < string.length; i++) {
     let counter = 1;
 
-    for (let j = i + 1; j < string.length; j++){
+    for (let j = i + 1; j < string.length; j++) {
       if (string[i] === string[j]) counter++;
     }
 
@@ -46,3 +49,5 @@ function highFrequency(string) {
   return result;
 }
 ```
+
+### 출처: [www.codewars.com](https://www.codewars.com)
