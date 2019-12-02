@@ -20,13 +20,17 @@ Given a string, detect whether or not it is a pangram. Return True if it is, Fal
 
 ```javascript
 function isPangram(string) {
-  const alphabet = "abcdefghijklmnopqrstuvwxyz";
+  const alphabet = 'abcdefghijklmnopqrstuvwxyz';
 
   const isInclude = element => {
-    return string.toLowerCase().split("").includes(element);
+    return string
+      .toLowerCase()
+      .split('')
+      .includes(element);
   };
 
-  return alphabet.split("").every(isInclude);
-
+  return alphabet.split('').every(isInclude);
 }
 ```
+
+### 출처: [www.codewars.com](https://www.codewars.com)

@@ -14,13 +14,13 @@ Return: a string formatted as a list of names separated by commas except for the
 ### 예시
 
 ```javascript
-list([{ name: "Bart" }, { name: "Lisa" }, { name: "Maggie" }]);
+list([{ name: 'Bart' }, { name: 'Lisa' }, { name: 'Maggie' }]);
 // returns 'Bart, Lisa & Maggie'
 
-list([{ name: "Bart" }, { name: "Lisa" }]);
+list([{ name: 'Bart' }, { name: 'Lisa' }]);
 // returns 'Bart & Lisa'
 
-list([{ name: "Bart" }]);
+list([{ name: 'Bart' }]);
 // returns 'Bart'
 
 list([]);
@@ -38,19 +38,21 @@ list([]);
 function list(names) {
   let result;
 
-  if (!names.length) return (rusult = "");
+  if (!names.length) return (rusult = '');
   else if (names.length == 1) return (result = names[0].name);
 
   for (let i = 0; i < names.length; i++) {
     if (!result) {
       result = names[i].name;
     } else if (i === names.length - 1) {
-      result += " & " + names[i].name;
+      result += ' & ' + names[i].name;
     } else {
-      result += ", " + names[i].name;
+      result += ', ' + names[i].name;
     }
   }
 
   return result;
 }
 ```
+
+### 출처: [www.codewars.com](https://www.codewars.com)
