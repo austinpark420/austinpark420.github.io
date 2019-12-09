@@ -29,7 +29,7 @@ LIFO: 콜스텍을 후입선출이라는 데이터구조 동작한다고 말할 
 
 ```javascript
 function firstFunction() {
-  throw new Error("Stack Tracn Error");
+  throw new Error('Stack Tracn Error');
 }
 
 function secondFunction() {
@@ -43,13 +43,13 @@ function thirdFunction() {
 thirdFunction();
 ```
 
-코드가 리턴되었을 떼 우리는 에러를 얻었습니다. 스텍이 프린트되면서 어떤 함수가 스텍에서 가징 위에있는지 알 수 있습니다.
+코드가 리턴되었을 떼 우리는 에러를 얻었습니다. 스텍이 프린트되면서 어떤 함수가 스텍에서 가장 위에 있는지 알 수 있습니다.
 
 ![Stack trace error](https://cdn-images-1.medium.com/max/800/1*LIuELJ2RTtwWExRWGdu_Hw.png)
 
-함수의 배열이 마지막으로 스텍에 들어깟던 firstFunction()이 리턴되었고, 그 다름으로는 secondFunction()이고 처음으로 스텍으로 푸시된 thirdFunction()으로 끝나는 것을 확인할 수 있습니다.
+함수의 배열이 마지막으로 스텍에 들어갔던 firstFunction()이 리턴되었고, 그 다음으로는 secondFunction()이고 처음으로 스텍으로 푸시된 thirdFunction()으로 끝나는 것을 확인할 수 있습니다.
 
-일시적인 저장: 함수가 실행(콜)되었을 때 함수, 파라미터, 변수는 스텍프레임을 형성하기위새 콜스텍안으로 푸시됩니다. 이 스텍 프레임은 스텍안에 있는 메모리 공간입니다. 함수가 리턴되었을때 메모리는 깨끗해집니다.
+일시적인 저장: 함수가 실행(콜)되었을 때 함수, 파라미터, 변수는 스텍프레임을 형성하기위해 콜스텍안으로 푸시됩니다. 이 스텍 프레임은 스텍안에 있는 메모리 공간입니다. 함수가 리턴되었을때 메모리는 깨끗해집니다.
 
 ![LIFO](https://cdn-images-1.medium.com/max/800/1*PPkrowy4n_Pyehb_NdhLrg.png)
 저작권: CMU
@@ -62,12 +62,12 @@ thirdFunction();
 
 ```javascript
 function firstFunction() {
-  console.log("Hello from firstFunction");
+  console.log('Hello from firstFunction');
 }
 
 function secondFunction() {
   firstFunction();
-  console.log("The End from secondFunction");
+  console.log('The End from secondFunction');
 }
 
 secondFunction();
@@ -77,7 +77,7 @@ secondFunction();
 
 코드가 실행되었을 때 발생하는 일들입니다.
 
-1. secondFunction()이 실행되었을 때, 빈 스텍 프레임이 생성됩니다. 이것은 주요한 메일 엔트리포인트입니다.
+1. secondFunction()이 실행되었을 때, 빈 스텍 프레임이 생성됩니다. 이것은 주요한 메인 엔트리포인트입니다.
 2. secondFunction()이 firstFunction()을 호출하고 그것은 스텍안으로 푸시됩니다.
 3. firstFunction()은 'hello from firstFunction'을 콘솔로 프린트합니다.
 4. firtsFunction()은 스텍에서 사라집니다.
