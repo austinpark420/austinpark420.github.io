@@ -28,7 +28,7 @@ cd ..
 
 babel-core는 ES2015+ 코드를 호환 가능한 자바스크립트 하위버전으로 변경해줍니다. @babel/preset-env와 @babel/preset-react는 babel과 react를 기능을 지원하는 플러그인입니다. 이것들은 뒷단에서 큰 역할을 합니다. 마지막으로 babel-loader는 우리가 설정한 방법대로 자바스크립트 코드를 변환합니다.
 
-루트 디렉토리로 이동한 다음, 우리의 경우 react-webpack-simple가 루트 디렉토리입니다. 여기서 .babelrc 라는 파잉을 만들어 줍니다. 이 파일은 앞으로 우리의 바벨을 어떻게 사용할지 설정을 하는 곳입니다. 위에 언급했던 것과 같이 @babel/preset-env와 @babel/preset-react을 작성합니다.
+루트 디렉토리로 이동한 다음, 우리의 경우 react-webpack-simple가 루트 디렉토리입니다. 여기서 .babelrc 라는 파일을 만들어 줍니다. 이 파일은 앞으로 우리의 바벨을 어떻게 사용할지 설정을 하는 곳입니다. 위에 언급했던 것과 같이 @babel/preset-env와 @babel/preset-react을 작성합니다.
 
 ```javascript
 // .babelrc 파일
@@ -37,9 +37,9 @@ babel-core는 ES2015+ 코드를 호환 가능한 자바스크립트 하위버전
 }
 ```
 
-좋습니다! 우리는 프로젝트에서 가장 어려운부분을 조금씩 해결해가고 있습니다. 다음에 루트 디렉토리에 webpack.config.js 파일을 만들어 봅시다. 이것은 webpack의 환경설정을 하는 파일입니다. webpack은 모듈 번들러입니다. 각기 다른 프로젝은 다른 목표를 가지고 있고 다른 방법으로 서버파일이 필요할 수 있습니다. html파일에 하나의 css 파일을 스타일태그를 가지기를 원한다면? 캐싱이 가능하게하기 바란다면, 앞으로 마법이 펼쳐질겁니다.
+좋습니다! 우리는 프로젝트에서 가장 어려운 부분을 조금씩 해결해가고 있습니다. 다음에 루트 디렉토리에 webpack.config.js 파일을 만들어 봅시다. 이것은 webpack의 환경설정을 하는 파일입니다. webpack은 모듈 번들러입니다. 각기 다른 프로젝은 다른 목표를 가지고 있고 다른 방법으로 서버파일이 필요할 수 있습니다. html파일에 하나의 css 파일을 스타일태그를 가지기를 원한다면? 캐싱이 가능하게하기 바란다면, 앞으로 마법이 펼쳐질겁니다.
 
-먼저 webpack은 몇 개의 코어 컨셉을 가지고 있고 그 부분과 친숙해져야합니다. 코어 컨셉은 [도큐먼트](https://yngmanie.space/posts/webpack)에서 확인할 수 있습니다. Entry는 webpack이 내부 의존성 그래프를 빌딩하는 엔트리포인트입니다. 우리의 경우 아무 것도 임포트받지 않아서 `./src/index.js` 그래프 일부에 속하지 않습니다. 여러분은 자바스크립트 파일과 다른 것들은 적절하게 임포트를 받아야 합니다. output은 webpack이 생성하는 모든 번들이 생성되는 곳입니다. webpack이 자바스크립트와 JSON만 이해할 수 있기 때문에 이미지나 css 파일 그리고 다른 것들을 이해하기 위해서는 함수 혹은 미들웨어가 있어야 합니다. 이런 미들웨어는 loader에 의해 정해지며 webpack은 이러한 미들웨어를 활용해 자바스크립트나 JSON파일이 아닌것들을 이해하고 의존성을 고려해 적절한 곳에 파일을 위치시킵니다. 마지막으로 plugins은 번들링 프로세스와 자산관리 그 밖에 다른 것을 하면서 로더를 서포트합니다.
+먼저 webpack은 몇 개의 코어 컨셉을 가지고 있고 그 부분과 친숙해져야합니다. 코어 컨셉은 [도큐먼트](https://yngmanie.space/posts/webpack)에서 확인할 수 있습니다. Entry는 webpack이 내부 의존성 그래프를 빌딩하는 엔트리포인트입니다. 우리의 경우 아무 것도 임포트받지 않아서 `./src/index.js` 그래프 일부에 속하지 않습니다. 여러분은 자바스크립트 파일과 다른 것들은 적절하게 임포트를 받아야 합니다. output은 webpack이 생성하는 모든 번들이 생성되는 곳입니다. webpack이 자바스크립트와 JSON만 이해할 수 있기 때문에 이미지나 css 파일 그리고 다른 것들을 이해하기 위해서는 함수 혹은 미들웨어가 있어야 합니다. 이런 미들웨어는 loader에 의해 정해지며 webpack은 이러한 미들웨어를 활용해 자바스크립트나 JSON파일이 아닌 것들을 이해하고 의존성을 고려해 적절한 곳에 파일을 위치시킵니다. 마지막으로 plugins은 번들링 프로세스와 자산관리 그 밖에 다른 것을 하면서 로더를 서포트합니다.
 
 ```javascript
 // webpack.config.js 파일을 사용하기전에 의존성을 주입해야합니다.
@@ -159,9 +159,9 @@ index.html 파일은 아래와 같은 코드를 포함하고 있습니다.
 create-react-app를 사용해 봤다면 div 태그는 root id가 있다는 것이 익숙할 겁니다. 여기서는 react에대해서 가르치는 자리가 아니고 프레임워크에 대한 사용법을 어느정도 안다는 가정하에 이야기하고 있습니다. 아래 react코드를 사용할 예정입니다. bootstarp 3을 사용하고 있고 4개의 버튼이 랜더링 되고 각 버튼을 클릭하면 각기 다른 배경색으로 변경됩니다.
 
 ```javascript
-import React, { Component } from "react";
-import ReactDOM from "react-dom";
-import "../style/style.css";
+import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
+import '../style/style.css';
 
 class App extends Component {
   constructor(props) {
@@ -175,51 +175,51 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div className='App'>
         <h1>Tester</h1>
-        <p>{this.state.changer + ""}</p>
+        <p>{this.state.changer + ''}</p>
         <button
-          className="btn"
+          className='btn'
           onClick={() => this.setState({ changer: !this.state.changer })}
         >
           State Change
         </button>
-        <div className="row">
-          <div className="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+        <div className='row'>
+          <div className='col-xs-12 col-sm-6 col-md-3 col-lg-3'>
             <button
-              className="btn"
+              className='btn'
               onClick={() => {
-                document.body.style.backgroundColor = "#ed6a5a";
+                document.body.style.backgroundColor = '#ed6a5a';
               }}
             >
               ed6a5a
             </button>
           </div>
-          <div className="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+          <div className='col-xs-12 col-sm-6 col-md-3 col-lg-3'>
             <button
-              className="btn"
+              className='btn'
               onClick={() => {
-                document.body.style.backgroundColor = "#fbfffe";
+                document.body.style.backgroundColor = '#fbfffe';
               }}
             >
               fbfffe
             </button>
           </div>
-          <div className="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+          <div className='col-xs-12 col-sm-6 col-md-3 col-lg-3'>
             <button
-              className="btn"
+              className='btn'
               onClick={() => {
-                document.body.style.backgroundColor = "#f6a90a";
+                document.body.style.backgroundColor = '#f6a90a';
               }}
             >
               f6a90a
             </button>
           </div>
-          <div className="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+          <div className='col-xs-12 col-sm-6 col-md-3 col-lg-3'>
             <button
-              className="btn"
+              className='btn'
               onClick={() => {
-                document.body.style.backgroundColor = "#9bc1bc";
+                document.body.style.backgroundColor = '#9bc1bc';
               }}
             >
               9bc1bc
@@ -231,7 +231,7 @@ class App extends Component {
   }
 }
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById('root'));
 ```
 
 긴 과정이지만 노력할만한 가치가 있습니다. 터미널로 가서 `npm run build`를 입력하고 엔터를 누르면 dist 폴더에 있는 index.html을 브라우저에 드래그앤 드롭을 하면 됩니다! Netlify를 통해서 프로젝트를 배포했습니다.

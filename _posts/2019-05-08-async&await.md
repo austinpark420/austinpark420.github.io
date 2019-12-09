@@ -69,7 +69,7 @@ promiseFunction
 promiseFunction은 해당 함수에서 프로세스를 나타내는 promise를 반환합니다. resolve 함수는 Promise 인스턴스가 끝났다는 신호입니다.
 
 그 후에 우리는 then()과 catch()를 promise 함수에서 호출 할 수 있습니다.
-then: promise가 종료된디 실행할 콜백함수를 전달합니다.
+then: promise가 종료된 뒤 실행할 콜백함수를 전달합니다.
 catch: 오류가 발생한 후에 실행할 콜백함수를 전달합니다.
 
 ### Async 함수
