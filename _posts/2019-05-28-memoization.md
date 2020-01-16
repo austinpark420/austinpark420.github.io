@@ -45,7 +45,7 @@ function fibonacci(n) {
 ```javascript
 function fibonacci(n, memo) {
   memo = memo || {};
-  if (meno[n]) {
+  if (memo[n]) {
     return memo[n];
   }
   if (n == 0 || n == 1) {
