@@ -79,8 +79,8 @@ _컴포지팅: 한 페이지를 여러 레이어로 나누고 레스트하며, �
 * 레스터 스레드는 레스터라이징을 하고 GPU 메모리에 저장
 
 
-참고
-[모던 웹 브라우저 들여다보기 (파트 1)](https://developers.google.com/web/updates/2018/09/inside-browser-part1)   
-[모던 웹 브라우저 들여다보기 (파트 2)](https://developers.google.com/web/updates/2018/09/inside-browser-part2)   
-[모던 웹 브라우저 들여다보기 (파트 3)](https://developers.google.com/web/updates/2018/09/inside-browser-part3)   
-[모던 웹 브라우저 들여다보기 (파트 4)](https://developers.google.com/web/updates/2018/09/inside-browser-part4)   
+* 참고   
+    * [모던 웹 브라우저 들여다보기 (파트 1)](https://developers.google.com/web/updates/2018/09/inside-browser-part1)   
+    * [모던 웹 브라우저 들여다보기 (파트 2)](https://developers.google.com/web/updates/2018/09/inside-browser-part2)   
+    * [모던 웹 브라우저 들여다보기 (파트 3)](https://developers.google.com/web/updates/2018/09/inside-browser-part3)   
+    * [모던 웹 브라우저 들여다보기 (파트 4)](https://developers.google.com/web/updates/2018/09/inside-browser-part4)   
