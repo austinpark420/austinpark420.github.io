@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 모던 웹 브라우저의 이해
+title: 지킬 로컬 서버 돌리면서 겪은 어려움
 permalink: posts/jekyllLocalServer
 tag: githubPage jekyll
 ---
